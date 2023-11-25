@@ -22,7 +22,6 @@
 		FBDDEFCD2B11CCB700CB6B7C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFCC2B11CCB700CB6B7C /* MainTabView.swift */; };
 		FBDDEFD02B11D2E500CB6B7C /* Color+DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFCF2B11D2E500CB6B7C /* Color+DesignSystem.swift */; };
 		FBDDEFD22B11D2F100CB6B7C /* Font+DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFD12B11D2F100CB6B7C /* Font+DesignSystem.swift */; };
-		FBDDEFD52B11DA9A00CB6B7C /* CustomModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFD42B11DA9A00CB6B7C /* CustomModal.swift */; };
 		FBDDEFD72B11DA9D00CB6B7C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFD62B11DA9D00CB6B7C /* Profile.swift */; };
 		FBDDEFD92B11DAA100CB6B7C /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFD82B11DAA100CB6B7C /* Feed.swift */; };
 /* End PBXBuildFile section */
@@ -43,7 +42,6 @@
 		FBDDEFCC2B11CCB700CB6B7C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		FBDDEFCF2B11D2E500CB6B7C /* Color+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+DesignSystem.swift"; sourceTree = "<group>"; };
 		FBDDEFD12B11D2F100CB6B7C /* Font+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+DesignSystem.swift"; sourceTree = "<group>"; };
-		FBDDEFD42B11DA9A00CB6B7C /* CustomModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModal.swift; sourceTree = "<group>"; };
 		FBDDEFD62B11DA9D00CB6B7C /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FBDDEFD82B11DAA100CB6B7C /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,7 +154,6 @@
 		FBDDEFD32B11DA8F00CB6B7C /* CustomModal */ = {
 			isa = PBXGroup;
 			children = (
-				FBDDEFD42B11DA9A00CB6B7C /* CustomModal.swift */,
 				6C3EB0472B120483002D29C6 /* ActionSheetView.swift */,
 				6C3EB03D2B11E070002D29C6 /* TestCompleteModalView.swift */,
 				6C3EB0412B11E170002D29C6 /* CategoryModalView.swift */,
@@ -254,7 +251,6 @@
 				6C3EB0422B11E170002D29C6 /* CategoryModalView.swift in Sources */,
 				6C3EB0462B11E9DD002D29C6 /* CustomAlertView.swift in Sources */,
 				FBDDEFD22B11D2F100CB6B7C /* Font+DesignSystem.swift in Sources */,
-				FBDDEFD52B11DA9A00CB6B7C /* CustomModal.swift in Sources */,
 				6C3EB03E2B11E070002D29C6 /* TestCompleteModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
