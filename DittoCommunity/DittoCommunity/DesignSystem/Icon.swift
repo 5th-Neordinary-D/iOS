@@ -17,6 +17,7 @@ enum Icon: String {
     case naver = "naver"
     case kakao = "kakao"
     case google = "google"
+    case skip = "skip"
     
     case home = "home"
     case mypage = "mypage"

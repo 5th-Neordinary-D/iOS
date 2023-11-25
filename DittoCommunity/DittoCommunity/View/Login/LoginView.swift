@@ -72,9 +72,9 @@ struct LoginView: View {
     }
 }
 
-#Preview {
-    LoginView()
-}
+//#Preview {
+//    LoginView()
+//}
 
 enum LoginMethod: CaseIterable {
     
@@ -116,22 +116,22 @@ enum LoginMethod: CaseIterable {
     var icon: Image {
         switch self {
         case .kakao:
-            Icon.kakao.image
+            return Icon.kakao.image
         case .naver:
-            Icon.naver.image
+            return Icon.naver.image
         case .google:
-            Icon.google.image
+            return Icon.google.image
         }
     }
     
     var buttonTitle: String {
         switch self {
         case .kakao:
-            "카카오로 로그인"
+            return "카카오로 로그인"
         case .naver:
-            "네이버로 로그인"
+            return "네이버로 로그인"
         case .google:
-            "구글로 로그인"
+            return "구글로 로그인"
         }
     }
 }
