@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CustomNavigationBar: View {
+    let title: String
+    
     let isDisplayLeadingBtn: Bool
     let isDisplayTrailingBtn: Bool
     
@@ -15,11 +17,13 @@ struct CustomNavigationBar: View {
     let trailingItems: [(Icon, () -> Void)]
     
     init(
+        title: String = "",
         isDisplayLeadingBtn: Bool = true,
         isDisplayTrailingBtn: Bool = true,
         leadingItems: [(Icon, () -> Void)] = [(.chevronLeft, {})],
         trailingItems: [(Icon, () -> Void)] = [(.chevronLeft, {}), (.chevronLeft, {})]
     ) {
+        self.title = title
         self.isDisplayLeadingBtn = isDisplayLeadingBtn
         self.isDisplayTrailingBtn = isDisplayTrailingBtn
         self.leadingItems = leadingItems
@@ -40,6 +44,11 @@ struct CustomNavigationBar: View {
                     )
                 })
             }
+            
+            Spacer()
+            
+            Text(title)
+                .font(.t1)
             
             Spacer()
             
