@@ -6,54 +6,68 @@
 //
 
 import SwiftUI
+import WrappingHStack
 
 struct CategoryModalView: View {
+    
     var body: some View {
         ZStack {
             Color.black.opacity(0.5).ignoresSafeArea(.all)
             VStack {
                 Spacer()
-                categoryView()
+                CategoryView()
             }
         }
     }
 }
 
 // MARK: - 카테고리 뷰
-@ViewBuilder
-private func categoryView() -> some View {
+private struct CategoryView: View {
     
-    ZStack {
-        Color.white
-        categoryCellView(category: "고민")
+    fileprivate var body: some View {
+        ZStack {
+            Color.white
+            VStack(spacing: 0) {
+                Spacer()
+                    .frame(height: 8)
+                Rectangle()
+                    .foregroundColor(.gray03)
+                .frame(width: 90, height: 6)
+                .cornerRadius(50)
+                Spacer()
+                    .frame(height: 32)
+                categoryListView()
+                Spacer()
+            }
+        }
+        .frame(height: 210)
+        .roundedCorner(30, corners: [.topLeft, .topRight])
     }
-    .frame(height: 300)
-    .roundedCorner(30, corners: [.topLeft, .topRight])
-	
 }
 
 // MARK: - 카테고리 셀 뷰
-@ViewBuilder
-private func categoryCellView(category: String) -> some View {
-    
-    let columns: [GridItem] = [
-            GridItem(.flexible(), spacing: nil, alignment: nil),
-            GridItem(.flexible(), spacing: nil, alignment: nil),
-            GridItem(.flexible(), spacing: nil, alignment: nil)
-    ]
-    
-    LazyVGrid(columns: columns) {
-        ForEach(0..<12) { index in
-            RoundedRectangle(cornerRadius: 10)
-                .stroke()
-                .foregroundColor(.gray03)
-                .frame(width: 100, height: 50)
-                .overlay {
-                    Text(category)
+private func categoryListView() -> some View {
+    WrappingHStack(CategoryType.allCases, id:\.self) { category in
+        Button(
+            action: {
+                
+            },
+            label: {
+                Text(category.description)
+                    .font(.b2)
+                    .foregroundColor(.gray07)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 6)
+                    .background(Color.gray01)
+                    .cornerRadius(8)
             }
-        }
+        )
+        .padding(.bottom, 8)
     }
+    .padding(.leading, 19)
 }
+
+
 
 
 struct CategoryModalView_Previews: PreviewProvider {
