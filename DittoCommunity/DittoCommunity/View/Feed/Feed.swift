@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Feed: Hashable {
+    var title: String
+    var category: String
+    var content: String
+    var id = UUID()
+}
