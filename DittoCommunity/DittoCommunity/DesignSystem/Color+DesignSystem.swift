@@ -11,11 +11,11 @@ import SwiftUI
 public extension Color {
 	
 	// MARK: - Gray Scale
-	static let gray01 = Color("gray01")
-	static let gray02 = Color("gray02")
-	static let gray03 = Color("gray03")
-	static let gray04 = Color("gray04")
-	static let gray05 = Color("gray05")
-	static let gray06 = Color("gray06")
-	static let gray07 = Color("gray07")
+	static let gray01 = Color("F3F3F3")
+	static let gray02 = Color("E9E9E9")
+	static let gray03 = Color("DDDDDD")
+	static let gray04 = Color("BDBDBD")
+	static let gray05 = Color("888888")
+	static let gray06 = Color("444444")
+	static let gray07 = Color("222222")
 }
