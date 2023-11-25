@@ -26,7 +26,9 @@ enum Icon: String {
     case google = "google"
     
     case home = "home"
+    case homeFill = "home_fill"
     case mypage = "mypage"
+    case mypageFill = "mypage_fill"
     case plus = "plus"
     
     var image: Image {

@@ -22,7 +22,7 @@ struct MainTabView: View {
                     HomeView()
                         .environmentObject(viewModel)
                         .tag(MainTab.home)
-                    Text("Profile")
+                    MyPageView()
                         .tag(MainTab.mypage)
                 }
                 bottomTabBar
@@ -51,15 +51,21 @@ struct MainTabView: View {
             LazyVGrid(
                 columns: Array(repeating: .init(), count: 3),
                 content: {
-                Icon.home.image
+                    Group {
+                        viewModel.currentTab == .home ?
+                        Icon.homeFill.image : Icon.home.image
+                    }
                     .onTapGesture {
                         self.viewModel.currentTab = .home
                     }
-                Image(systemName: "plus.circle")
-                    .onTapGesture {
-                        viewModel.showFeedPostView = true
+                    Image(systemName: "plus.circle")
+                        .onTapGesture {
+                            viewModel.showFeedPostView = true
+                        }
+                    Group {
+                        viewModel.currentTab == .mypage ?
+                        Icon.mypageFill.image : Icon.mypage.image
                     }
-                Icon.mypage.image
                     .onTapGesture {
                         viewModel.currentTab
                         = .mypage
