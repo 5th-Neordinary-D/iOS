@@ -99,7 +99,19 @@ struct MyPageView: View {
                                 .frame(width: geo.size.width * CGFloat((sympathyValue / 100)),height: 10)
                             .foregroundColor(.primary02)
                             
-                            Image("Union")
+                            Image("smileIcon")
+                            .padding(3)
+                            .background(
+                                ZStack {
+                                    Circle()
+                                        .frame(width: 60)
+                                        .foregroundColor(.white)
+                                    Circle()
+                                        .frame(width: 30)
+                                        .foregroundColor(.primary02)
+                                        .padding(3)
+                                }
+                            )
                             .padding(.top)
                             .position(x: geo.size.width * CGFloat((sympathyValue / 100)))
                     }
