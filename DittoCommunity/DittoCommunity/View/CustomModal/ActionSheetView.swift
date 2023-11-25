@@ -9,30 +9,11 @@ import SwiftUI
 
 struct ActionSheetView: View {
     
-    let firstTitle: String
-    let secondTitle: String
-    let thirdTitle: String
+    let items: [(String, () -> Void)]
     
-    let firstBtnAction: () -> Void
-    let secondBtnAction: () -> Void
-    let thirdBtnAction: () -> Void
-    
-    init(
-        firstTitle: String = "프로필 방문",
-        secondTitle: String = "응원 보내기",
-        thirdTitle: String = "취소하기",
-        firstBtnAction: @escaping () -> Void = {},
-        secondBtnAction: @escaping () -> Void = {},
-        thirdBtnAction: @escaping () -> Void = {}
-    ) {
-        self.firstTitle = firstTitle
-        self.secondTitle = secondTitle
-        self.thirdTitle = thirdTitle
-        self.firstBtnAction = firstBtnAction
-        self.secondBtnAction = secondBtnAction
-        self.thirdBtnAction = thirdBtnAction
+    init(items: [(String, () -> Void)] = [("프로필 방문", {}), ("프로필 방문", {}), ("프로필 방문", {})]) {
+        self.items = items
     }
-    
     
     var body: some View {
         ZStack {
@@ -41,56 +22,33 @@ struct ActionSheetView: View {
             VStack(spacing: 0) {
                 Spacer()
                 
-                RoundedRectangle(cornerRadius: 20)
+                Rectangle()
                     .foregroundColor(.white)
-                    .frame(height: 180)
+                    .frame(height: 60 * CGFloat(items.count))
                     .overlay {
                         VStack(spacing: 0) {
-                            Button(
-                                action: {
-                                    firstBtnAction()
-                                },
-                                label: {
-                                    Text(firstTitle)
-                                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                }
-                            )
-                            
-                            Rectangle()
-                                .frame(height: 1)
-                                .foregroundColor(.gray03)
-                            
-                            Button(
-                                action: {
-                                    secondBtnAction()
-                                },
-                                label: {
-                                    Text(secondTitle)
-                                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                }
-                            )
-                            
-                            Rectangle()
-                                .frame(height: 1)
-                                .foregroundColor(.gray03)
-                            
-                            Button(
-                                action: {
-                                    thirdBtnAction()
-                                },
-                                label: {
-                                    Text(thirdTitle)
-                                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                }
-                            )
+
+                            ForEach(items, id: \.0, content: { item in
+                                Button(
+                                    action: {
+                                        item.1()
+                                    },
+                                    label: {
+                                        Text(item.0)
+                                            .font(.b1)
+                                            .foregroundColor(.gray07)
+                                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                    }
+                                )
+                                Rectangle()
+                                    .frame(height: 1)
+                                
+                            })
                         }
-                        .foregroundColor(.black)
+                        .foregroundColor(.gray03)
                     }
             }
-//            .edgesIgnoringSafeArea(.bottom)
-            .padding(.horizontal, 15)
-            .padding(.bottom, 23)
-            
+            .edgesIgnoringSafeArea(.bottom)
                 
         }
     }
