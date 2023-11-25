@@ -15,6 +15,8 @@
 		6C3EB0462B11E9DD002D29C6 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0452B11E9DD002D29C6 /* CustomAlertView.swift */; };
 		6C3EB0482B120483002D29C6 /* ActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0472B120483002D29C6 /* ActionSheetView.swift */; };
 		6C3EB04E2B121CF9002D29C6 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB04D2B121CF9002D29C6 /* CustomNavigationBar.swift */; };
+		FBB1DA0A2B125CD800E8C57A /* View+Redacted.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1DA092B125CD800E8C57A /* View+Redacted.swift */; };
+		FBB1DA0D2B12607E00E8C57A /* FeedDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1DA0C2B12607E00E8C57A /* FeedDetailViewModel.swift */; };
 		FBDDEFB42B11C6D500CB6B7C /* DittoCommunityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */; };
 		FBDDEFB82B11C6D600CB6B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */; };
 		FBDDEFBB2B11C6D600CB6B7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDDEFBA2B11C6D600CB6B7C /* Preview Assets.xcassets */; };
@@ -35,6 +37,14 @@
 		FBDDEFEF2B121E8400CB6B7C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFEE2B121E8400CB6B7C /* HomeView.swift */; };
 		FBDDEFF12B12253200CB6B7C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFF02B12253200CB6B7C /* HomeViewModel.swift */; };
 		FBDDEFF32B122D2C00CB6B7C /* FeedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFF22B122D2C00CB6B7C /* FeedCellView.swift */; };
+		FBDDEFF62B1230E100CB6B7C /* FeedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFF52B1230E100CB6B7C /* FeedAPI.swift */; };
+		FBDDEFF92B1231A700CB6B7C /* ListFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFF82B1231A700CB6B7C /* ListFeed.swift */; };
+		FBDDF0022B12349B00CB6B7C /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDF0012B12349B00CB6B7C /* UIApplication+.swift */; };
+		FBDDF0042B12361E00CB6B7C /* ObservableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDF0032B12361E00CB6B7C /* ObservableScrollView.swift */; };
+		FBDDF0062B123DD200CB6B7C /* View+ScrollOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDF0052B123DD200CB6B7C /* View+ScrollOffset.swift */; };
+		FBDDF0082B1245BE00CB6B7C /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDF0072B1245BE00CB6B7C /* MainTabViewModel.swift */; };
+		FBDDF00A2B124A2B00CB6B7C /* FeedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDF0092B124A2B00CB6B7C /* FeedDetailView.swift */; };
+		FBDDF00C2B124A4200CB6B7C /* DetailFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDF00B2B124A4200CB6B7C /* DetailFeed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +57,8 @@
 		6C3EB0452B11E9DD002D29C6 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		6C3EB0472B120483002D29C6 /* ActionSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetView.swift; sourceTree = "<group>"; };
 		6C3EB04D2B121CF9002D29C6 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		FBB1DA092B125CD800E8C57A /* View+Redacted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Redacted.swift"; sourceTree = "<group>"; };
+		FBB1DA0C2B12607E00E8C57A /* FeedDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewModel.swift; sourceTree = "<group>"; };
 		FBDDEFB02B11C6D500CB6B7C /* DittoCommunity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DittoCommunity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoCommunityApp.swift; sourceTree = "<group>"; };
 		FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +78,14 @@
 		FBDDEFEE2B121E8400CB6B7C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FBDDEFF02B12253200CB6B7C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		FBDDEFF22B122D2C00CB6B7C /* FeedCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellView.swift; sourceTree = "<group>"; };
+		FBDDEFF52B1230E100CB6B7C /* FeedAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPI.swift; sourceTree = "<group>"; };
+		FBDDEFF82B1231A700CB6B7C /* ListFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFeed.swift; sourceTree = "<group>"; };
+		FBDDF0012B12349B00CB6B7C /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		FBDDF0032B12361E00CB6B7C /* ObservableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableScrollView.swift; sourceTree = "<group>"; };
+		FBDDF0052B123DD200CB6B7C /* View+ScrollOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ScrollOffset.swift"; sourceTree = "<group>"; };
+		FBDDF0072B1245BE00CB6B7C /* MainTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
+		FBDDF0092B124A2B00CB6B7C /* FeedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailView.swift; sourceTree = "<group>"; };
+		FBDDF00B2B124A4200CB6B7C /* DetailFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFeed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,17 +114,19 @@
 		6C3EB04B2B121CD5002D29C6 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				6C3EB04C2B121CDF002D29C6 /* NavigationBar */,
+				6C3EB04D2B121CF9002D29C6 /* CustomNavigationBar.swift */,
+				FBDDF0032B12361E00CB6B7C /* ObservableScrollView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
 		};
-		6C3EB04C2B121CDF002D29C6 /* NavigationBar */ = {
+		FBB1DA0B2B12607300E8C57A /* FeedDetail */ = {
 			isa = PBXGroup;
 			children = (
-				6C3EB04D2B121CF9002D29C6 /* CustomNavigationBar.swift */,
+				FBDDF0092B124A2B00CB6B7C /* FeedDetailView.swift */,
+				FBB1DA0C2B12607E00E8C57A /* FeedDetailViewModel.swift */,
 			);
-			path = NavigationBar;
+			path = FeedDetail;
 			sourceTree = "<group>";
 		};
 		FBDDEFA72B11C6D500CB6B7C = {
@@ -126,12 +148,11 @@
 		FBDDEFB22B11C6D500CB6B7C /* DittoCommunity */ = {
 			isa = PBXGroup;
 			children = (
-				6C3EB04B2B121CD5002D29C6 /* Component */,
 				3B3F22922B11D9D300351261 /* Info.plist */,
 				FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */,
+				FBDDEFF42B1230D800CB6B7C /* Network */,
 				FBDDEFE42B11E96F00CB6B7C /* Helper */,
 				FBDDEFCE2B11D2D100CB6B7C /* DesignSystem */,
-				3B3F228B2B11D77F00351261 /* Fonts */,
 				FBDDEFC62B11CC8700CB6B7C /* View */,
 				FBDDEFB92B11C6D600CB6B7C /* Preview Content */,
 			);
@@ -150,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				FBDDEFE12B11E5FE00CB6B7C /* Login */,
-				FBDDEFD32B11DA8F00CB6B7C /* CustomModal */,
 				FBDDEFC92B11CC9B00CB6B7C /* MyPage */,
 				FBDDEFC82B11CC9600CB6B7C /* Home */,
 				FBDDEFC72B11CC9000CB6B7C /* MainTab */,
@@ -162,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				FBDDEFCC2B11CCB700CB6B7C /* MainTabView.swift */,
+				FBDDF0072B1245BE00CB6B7C /* MainTabViewModel.swift */,
 			);
 			path = MainTab;
 			sourceTree = "<group>";
@@ -172,6 +193,7 @@
 				FBDDEFEE2B121E8400CB6B7C /* HomeView.swift */,
 				FBDDEFF22B122D2C00CB6B7C /* FeedCellView.swift */,
 				FBDDEFF02B12253200CB6B7C /* HomeViewModel.swift */,
+				FBB1DA0B2B12607300E8C57A /* FeedDetail */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -187,6 +209,9 @@
 		FBDDEFCE2B11D2D100CB6B7C /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				3B3F228B2B11D77F00351261 /* Fonts */,
+				FBDDEFD32B11DA8F00CB6B7C /* CustomModal */,
+				6C3EB04B2B121CD5002D29C6 /* Component */,
 				FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */,
 				FBDDEFCF2B11D2E500CB6B7C /* Color+DesignSystem.swift */,
 				FBDDEFD12B11D2F100CB6B7C /* Font+DesignSystem.swift */,
@@ -228,11 +253,48 @@
 		FBDDEFE52B11E97800CB6B7C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				FBDDEFE62B11E97F00CB6B7C /* Color+Hex.swift */,
-				FBDDEFEC2B12155500CB6B7C /* UIscreen+ScreenSize.swift */,
-				FBDDEFE82B11EE3C00CB6B7C /* UINavigationController+UIGestureRecognizerDelegate.swift */,
+				FBDDEFFF2B12346F00CB6B7C /* SwiftUI */,
+				FBDDF0002B12347A00CB6B7C /* UIKit */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		FBDDEFF42B1230D800CB6B7C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFF72B12310700CB6B7C /* DTO */,
+				FBDDEFF52B1230E100CB6B7C /* FeedAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FBDDEFF72B12310700CB6B7C /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFF82B1231A700CB6B7C /* ListFeed.swift */,
+				FBDDF00B2B124A4200CB6B7C /* DetailFeed.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		FBDDEFFF2B12346F00CB6B7C /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFE62B11E97F00CB6B7C /* Color+Hex.swift */,
+				FBDDF0052B123DD200CB6B7C /* View+ScrollOffset.swift */,
+				FBB1DA092B125CD800E8C57A /* View+Redacted.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		FBDDF0002B12347A00CB6B7C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFEC2B12155500CB6B7C /* UIscreen+ScreenSize.swift */,
+				FBDDF0012B12349B00CB6B7C /* UIApplication+.swift */,
+				FBDDEFE82B11EE3C00CB6B7C /* UINavigationController+UIGestureRecognizerDelegate.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,8 +378,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBDDEFF32B122D2C00CB6B7C /* FeedCellView.swift in Sources */,
+				FBDDF0022B12349B00CB6B7C /* UIApplication+.swift in Sources */,
+				FBDDF00C2B124A4200CB6B7C /* DetailFeed.swift in Sources */,
 				6C3EB0482B120483002D29C6 /* ActionSheetView.swift in Sources */,
+				FBB1DA0A2B125CD800E8C57A /* View+Redacted.swift in Sources */,
+				FBDDF0062B123DD200CB6B7C /* View+ScrollOffset.swift in Sources */,
 				FBDDEFB42B11C6D500CB6B7C /* DittoCommunityApp.swift in Sources */,
+				FBB1DA0D2B12607E00E8C57A /* FeedDetailViewModel.swift in Sources */,
 				FBDDEFD72B11DA9D00CB6B7C /* Profile.swift in Sources */,
 				FBDDEFF12B12253200CB6B7C /* HomeViewModel.swift in Sources */,
 				FBDDEFE02B11DF3100CB6B7C /* Icon.swift in Sources */,
@@ -326,11 +393,16 @@
 				FBDDEFED2B12155500CB6B7C /* UIscreen+ScreenSize.swift in Sources */,
 				FBDDEFDC2B11DC8E00CB6B7C /* SympathyTestView.swift in Sources */,
 				FBDDEFE72B11E97F00CB6B7C /* Color+Hex.swift in Sources */,
+				FBDDF00A2B124A2B00CB6B7C /* FeedDetailView.swift in Sources */,
+				FBDDF0082B1245BE00CB6B7C /* MainTabViewModel.swift in Sources */,
 				FBDDEFCD2B11CCB700CB6B7C /* MainTabView.swift in Sources */,
+				FBDDF0042B12361E00CB6B7C /* ObservableScrollView.swift in Sources */,
+				FBDDEFF62B1230E100CB6B7C /* FeedAPI.swift in Sources */,
 				FBDDEFE92B11EE3C00CB6B7C /* UINavigationController+UIGestureRecognizerDelegate.swift in Sources */,
 				FBDDEFD22B11D2F100CB6B7C /* Font+DesignSystem.swift in Sources */,
 				FBDDEFE32B11E60D00CB6B7C /* LoginView.swift in Sources */,
 				FBDDEFEF2B121E8400CB6B7C /* HomeView.swift in Sources */,
+				FBDDEFF92B1231A700CB6B7C /* ListFeed.swift in Sources */,
 				FBDDEFDE2B11DE5800CB6B7C /* LoginViewModel.swift in Sources */,
 				FBDDEFEB2B12113600CB6B7C /* TestFinishView.swift in Sources */,
 				6C3EB0422B11E170002D29C6 /* CategoryModalView.swift in Sources */,

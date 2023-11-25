@@ -15,8 +15,8 @@ struct CustomNavigationBar: View {
     let trailingItems: [(Icon, () -> Void)]
     
     init(
-        isDisplayLeadingBtn: Bool = true,
-        isDisplayTrailingBtn: Bool = true,
+        isDisplayLeadingBtn: Bool = false,
+        isDisplayTrailingBtn: Bool = false,
         leadingItems: [(Icon, () -> Void)] = [(.chevronLeft, {})],
         trailingItems: [(Icon, () -> Void)] = [(.chevronLeft, {}), (.chevronLeft, {})]
     ) {

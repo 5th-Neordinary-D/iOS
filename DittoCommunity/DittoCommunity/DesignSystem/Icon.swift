@@ -13,11 +13,17 @@ enum Icon: String {
     case chevronLeft = "chevronLeft"
     case arrowDown = "arrowDown"
     case check = "check"
+    case skip = "skip"
+    case bell = "bell"
+    case search = "search"
+    case heart = "heart"
+    case heartFill = "heart_fill"
+    case bubble = "bubble"
+    case more = "more"
     
     case naver = "naver"
     case kakao = "kakao"
     case google = "google"
-    case skip = "skip"
     
     case home = "home"
     case mypage = "mypage"

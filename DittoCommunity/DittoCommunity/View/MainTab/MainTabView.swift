@@ -9,29 +9,41 @@ import SwiftUI
 
 struct MainTabView: View {
     
-    @State var tabTag: MainTab = .home
-    @State var showFeedPostView = false
+    @StateObject var viewModel = MainTabViewModel()
     
     init() {
         UITabBar.appearance().isHidden = true
     }
     
     var body: some View {
-        VStack(spacing: 0) {
-            TabView(selection: $tabTag) {
-                HomeView()
-                    .tag(MainTab.home)
-                    .toolbar(.hidden, for: .bottomBar)
-                Text("Profile")
-                    .tag(MainTab.mypage)
+        NavigationView {
+            VStack(spacing: 0) {
+                TabView(selection: $viewModel.currentTab) {
+                    HomeView()
+                        .environmentObject(viewModel)
+                        .tag(MainTab.home)
+                    Text("Profile")
+                        .tag(MainTab.mypage)
+                }
+                bottomTabBar
+                dynamicDestination
             }
-            bottomTabBar
+            .edgesIgnoringSafeArea(.bottom)
+            .frame(maxHeight: .infinity)
+            .sheet(isPresented: $viewModel.showFeedPostView, content: {
+                Text("Feed Post")
+            })
         }
-        .edgesIgnoringSafeArea(.bottom)
-        .frame(maxHeight: .infinity)
-        .sheet(isPresented: $showFeedPostView, content: {
-            Text("Feed Post")
-        })
+    }
+    
+    @ViewBuilder var dynamicDestination: some View {
+        NavigationLink(isActive: $viewModel.shouldNavigate) {
+            viewModel.destination?.view
+                .navigationBarBackButtonHidden()
+                .navigationBarHidden(true)
+        } label: {
+            EmptyView()
+        }
     }
     
     @ViewBuilder var bottomTabBar: some View {
@@ -41,15 +53,16 @@ struct MainTabView: View {
                 content: {
                 Icon.home.image
                     .onTapGesture {
-                        self.tabTag = .home
+                        self.viewModel.currentTab = .home
                     }
                 Image(systemName: "plus.circle")
                     .onTapGesture {
-                        showFeedPostView = true
+                        viewModel.showFeedPostView = true
                     }
                 Icon.mypage.image
                     .onTapGesture {
-                        self.tabTag = .mypage
+                        viewModel.currentTab
+                        = .mypage
                     }
             })
             .padding(.top, 16)

@@ -8,23 +8,32 @@
 import SwiftUI
 
 struct HomeView: View {
-    
-    @State var tPadding: CGFloat = 100
-    @State var opacity: CGFloat = 1
-    
+        
+    @EnvironmentObject var mainTabVM: MainTabViewModel
     @StateObject var viewModel = HomeViewModel()
     
     var body: some View {
         VStack(spacing: 0) {
-            VStack {
+            topBar
+            VStack(spacing: 0) {
                 categoriesView
                 feedList
             }
-            .padding(.top, tPadding)
+            .padding(.top, viewModel.tPadding)
         }
         .background(alignment: .top, content: {
-            title
+            title.padding(.top, 44)
         })
+    }
+    
+    @ViewBuilder var topBar: some View {
+        CustomNavigationBar(
+            isDisplayTrailingBtn: true,
+            trailingItems: [
+                (.bell, { }),
+                (.search, { })
+            ]
+        )
     }
     
     @ViewBuilder var title: some View {
@@ -34,7 +43,7 @@ struct HomeView: View {
         }
         .font(.h1)
         .foregroundColor(.gray07)
-        .opacity(opacity)
+        .opacity(viewModel.opacity)
         .padding(.horizontal, 20)
         .padding(.vertical, 16)
     }
@@ -66,9 +75,21 @@ struct HomeView: View {
     }
     
     @ViewBuilder var dropBox: some View {
-        Button(action: {
-            viewModel.shouldShowDropbox.toggle()
-        }, label: {
+        Menu {
+            ForEach(FilterItem.allCases, id: \.self) { item in
+                Button {
+                    viewModel.selectedFilter = item
+                } label: {
+                    Label {
+                        Text(item.title)
+                    } icon: {
+                        if viewModel.selectedFilter == item {
+                            Icon.check.image
+                        }
+                    }
+                }
+            }
+        } label: {
             HStack(spacing: 2) {
                 Text(viewModel.selectedFilter.title)
                 Icon.arrowDown.image
@@ -79,7 +100,7 @@ struct HomeView: View {
             .foregroundColor(.gray07)
             .background(Color.gray01)
             .cornerRadius(8)
-        })
+        }
     }
     
     @ViewBuilder func categoryCell(_ category: FeedCategory) -> some View {
@@ -139,11 +160,23 @@ struct HomeView: View {
     @ViewBuilder var feedList: some View {
         ScrollView {
             LazyVStack(content: {
-                ForEach(1...10, id: \.self) { count in
-                    Text("Placeholder \(count)")
-                        .frame(height: 100)
+                ForEach(Array(viewModel.feeds.enumerated()), id: \.offset) { index, feed in
+                    FeedCellView(index: index)
+                        .background(Color.white)
+                        .overlay(alignment: .bottom, content: {
+                            if index != viewModel.feeds.count - 1 {
+                                Color.gray03
+                                    .frame(height: 1)
+                            }
+                        })
+                        .padding(.horizontal, 20)
+                        .environmentObject(viewModel)
+                        .onTapGesture {
+                            mainTabVM.navigate(to: .feedDetail(feed.feedId))
+                        }
                 }
             })
+            .scrollOffset { viewModel.didScroll($0) }
         }
     }
 }
@@ -155,7 +188,16 @@ struct HomeView_Previews: PreviewProvider {
 }
 
 enum FeedCategory: CaseIterable {
-    case all, relationship, love, company, family
+    case all, 
+         relationship,
+         love,
+         company,
+         family,
+         employment,
+         health,
+         selfdev,
+         pet,
+         etc
     
     var title: String {
         switch self {
@@ -169,16 +211,51 @@ enum FeedCategory: CaseIterable {
             return "회사"
         case .family:
             return "가족"
+        case .employment:
+            return "취업/이직"
+        case .health:
+            return "건강"
+        case .selfdev:
+            return "자기계발"
+        case .pet:
+            return "반려동물"
+        case .etc:
+            return "기타"
+        }
+    }
+    
+    var query: String {
+        switch self {
+        case .all:
+            return "default"
+        case .relationship:
+            return "RELATIONSHIP"
+        case .love:
+            return "LOVE"
+        case .company:
+            return "COMPANY"
+        case .family:
+            return "FAMILY"
+        case .employment:
+            return "EMPLOYMENT"
+        case .health:
+            return "HEALTH"
+        case .selfdev:
+            return "SELFDEV"
+        case .pet:
+            return "PET"
+        case .etc:
+            return "ETC"
         }
     }
 }
 
 enum FilterItem: CaseIterable {
-    case famous, latest
+    case hot, latest
     
     var title: String {
         switch self {
-        case .famous:
+        case .hot:
             return "인기순"
         case .latest:
             return "최신순"
