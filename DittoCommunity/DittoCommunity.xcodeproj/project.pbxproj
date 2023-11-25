@@ -10,6 +10,7 @@
 		3B3F228D2B11D7DC00351261 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3F228C2B11D7DC00351261 /* Pretendard-Bold.otf */; };
 		3B3F228F2B11D7FB00351261 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3F228E2B11D7FB00351261 /* Pretendard-SemiBold.otf */; };
 		3B3F22912B11D80600351261 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3F22902B11D80600351261 /* Pretendard-Regular.otf */; };
+		3B3F22962B12017B00351261 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3F22952B12017B00351261 /* MyPageView.swift */; };
 		FBDDEFB42B11C6D500CB6B7C /* DittoCommunityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */; };
 		FBDDEFB82B11C6D600CB6B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */; };
 		FBDDEFBB2B11C6D600CB6B7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDDEFBA2B11C6D600CB6B7C /* Preview Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		3B3F228E2B11D7FB00351261 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		3B3F22902B11D80600351261 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		3B3F22922B11D9D300351261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3B3F22952B12017B00351261 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		FBDDEFB02B11C6D500CB6B7C /* DittoCommunity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DittoCommunity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoCommunityApp.swift; sourceTree = "<group>"; };
 		FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				FBDDEFC92B11CC9B00CB6B7C /* Profile */,
 				FBDDEFC82B11CC9600CB6B7C /* Feed */,
 				FBDDEFC72B11CC9000CB6B7C /* MainTab */,
+				3B3F22952B12017B00351261 /* MyPageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			files = (
 				FBDDEFB42B11C6D500CB6B7C /* DittoCommunityApp.swift in Sources */,
 				FBDDEFD02B11D2E500CB6B7C /* Color+DesignSystem.swift in Sources */,
+				3B3F22962B12017B00351261 /* MyPageView.swift in Sources */,
 				FBDDEFCD2B11CCB700CB6B7C /* MainTabView.swift in Sources */,
 				FBDDEFD22B11D2F100CB6B7C /* Font+DesignSystem.swift in Sources */,
 			);
