@@ -9,18 +9,22 @@ import SwiftUI
 
 struct MainTabView: View {
     
-    @State var tabTag = 1
+    @State var tabTag: MainTab = .home
     @State var showFeedPostView = false
     
+    init() {
+        UITabBar.appearance().isHidden = true
+    }
+    
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             TabView(selection: $tabTag) {
-                Text("Feed")
-                    .tag(1)
+                HomeView()
+                    .tag(MainTab.home)
+                    .toolbar(.hidden, for: .bottomBar)
                 Text("Profile")
-                    .tag(2)
+                    .tag(MainTab.mypage)
             }
-            .frame(maxHeight: .infinity)
             bottomTabBar
         }
         .edgesIgnoringSafeArea(.bottom)
@@ -31,37 +35,42 @@ struct MainTabView: View {
     }
     
     @ViewBuilder var bottomTabBar: some View {
-        LazyVGrid(columns: Array(repeating: .init(), count: 3), content: {
-            Label(
-                title: { Text("Feed") },
-                icon: { Image(systemName: "list.bullet") }
-            ).onTapGesture {
-                self.tabTag = 1
-            }
-            Image(systemName: "plus.circle")
-                .onTapGesture {
-                    showFeedPostView = true
-                }
-            Label(
-                title: { Text("Profile") },
-                icon: { Image(systemName: "person") }
-            ).onTapGesture {
-                self.tabTag = 2
-            }
+        VStack {
+            LazyVGrid(
+                columns: Array(repeating: .init(), count: 3),
+                content: {
+                Icon.home.image
+                    .onTapGesture {
+                        self.tabTag = .home
+                    }
+                Image(systemName: "plus.circle")
+                    .onTapGesture {
+                        showFeedPostView = true
+                    }
+                Icon.mypage.image
+                    .onTapGesture {
+                        self.tabTag = .mypage
+                    }
+            })
+            .padding(.top, 16)
+            Spacer()
+        }
+        .frame(height: 80)
+        .overlay(alignment: .top, content: {
+            Color.gray03
+                .frame(maxWidth: .infinity)
+                .frame(height: 1)
         })
-        .padding(.bottom, 50)
-        .padding(.top, 20)
-        .background(Color.gray.opacity(0.1))
     }
 }
 
 struct MainTabView_Previews: PreviewProvider {
-        static var previews: some View {
-            MainTabView()
-        }
+    static var previews: some View {
+        MainTabView()
+    }
 }
 
-enum MainTabItem: Int {
-    case feedList = 1
-    case profile = 2
+enum MainTab {
+    case home
+    case mypage
 }
