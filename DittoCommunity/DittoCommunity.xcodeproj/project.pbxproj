@@ -11,6 +11,8 @@
 		FBDDEFB62B11C6D500CB6B7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFB52B11C6D500CB6B7C /* ContentView.swift */; };
 		FBDDEFB82B11C6D600CB6B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */; };
 		FBDDEFBB2B11C6D600CB6B7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDDEFBA2B11C6D600CB6B7C /* Preview Assets.xcassets */; };
+		FBDDEFC32B11C75400CB6B7C /* MightyCombine in Frameworks */ = {isa = PBXBuildFile; productRef = FBDDEFC22B11C75400CB6B7C /* MightyCombine */; };
+		FBDDEFC52B11C75400CB6B7C /* MightySwift in Frameworks */ = {isa = PBXBuildFile; productRef = FBDDEFC42B11C75400CB6B7C /* MightySwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBDDEFC52B11C75400CB6B7C /* MightySwift in Frameworks */,
+				FBDDEFC32B11C75400CB6B7C /* MightyCombine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = DittoCommunity;
+			packageProductDependencies = (
+				FBDDEFC22B11C75400CB6B7C /* MightyCombine */,
+				FBDDEFC42B11C75400CB6B7C /* MightySwift */,
+			);
 			productName = DittoCommunity;
 			productReference = FBDDEFB02B11C6D500CB6B7C /* DittoCommunity.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = FBDDEFA72B11C6D500CB6B7C;
+			packageReferences = (
+				FBDDEFC12B11C75400CB6B7C /* XCRemoteSwiftPackageReference "MightyCombine" */,
+			);
 			productRefGroup = FBDDEFB12B11C6D500CB6B7C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -280,6 +291,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +299,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kim.DittoCommunity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,6 +324,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +332,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kim.DittoCommunity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -344,6 +363,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FBDDEFC12B11C75400CB6B7C /* XCRemoteSwiftPackageReference "MightyCombine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MightyCombine/MightyCombine.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FBDDEFC22B11C75400CB6B7C /* MightyCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBDDEFC12B11C75400CB6B7C /* XCRemoteSwiftPackageReference "MightyCombine" */;
+			productName = MightyCombine;
+		};
+		FBDDEFC42B11C75400CB6B7C /* MightySwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBDDEFC12B11C75400CB6B7C /* XCRemoteSwiftPackageReference "MightyCombine" */;
+			productName = MightySwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FBDDEFA82B11C6D500CB6B7C /* Project object */;
 }
