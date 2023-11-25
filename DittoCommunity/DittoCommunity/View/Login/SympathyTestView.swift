@@ -20,6 +20,7 @@ struct SympathyTestView: View {
         VStack(spacing: 0) {
             topBar
                 .padding(.bottom, 36)
+
             // Indicator
             VStack(spacing: 0) {
                 title
@@ -39,23 +40,34 @@ struct SympathyTestView: View {
     
     @ViewBuilder var topBar: some View {
         VStack(spacing: 0) {
-            HStack {
-                Icon.chevronLeft.image.onTapGesture { dismiss() }
-                Spacer()
-                Text("건너뛰기")
-                    .font(.b2)
-                    .foregroundColor(.gray05)
-                    .onTapGesture {
-                        // TODO: - 네트워크 통신으로 로그인하기
-                        appState.hasLogin = true
-                    }
-            }
-            .padding(.trailing, 10)
-            .frame(height: 44)
-            .padding(.horizontal, 20)
+//            HStack {
+//                Icon.chevronLeft.image.onTapGesture { dismiss() }
+//                Spacer()
+//                Text("건너뛰기")
+//                    .font(.b2)
+//                    .foregroundColor(.gray05)
+//                    .onTapGesture {
+//                        // TODO: - 네트워크 통신으로 로그인하기
+//                        appState.hasLogin = true
+//                    }
+//            }
+            CustomNavigationBar(
+                isDisplayLeadingBtn: true,
+                isDisplayTrailingBtn: true,
+                leadingItems: [(.chevronLeft, { dismiss() })],
+                trailingItems: [(.skip, {
+                    // TODO: - 네트워크 통신으로 로그인하기
+                    appState.hasLogin = true
+                    
+                })]
+            )
+//            .padding(.trailing, 10)
+//            .frame(height: 44)
+//            .padding(.horizontal, 20)
             pageIndicator
         }
     }
+    
     
     @ViewBuilder var pageIndicator: some View {
         HStack(spacing: 0) {

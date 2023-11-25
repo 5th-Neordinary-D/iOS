@@ -13,6 +13,7 @@ enum Icon: String {
     case naver = "naver"
     case kakao = "kakao"
     case google = "google"
+    case skip = "skip"
     
     var image: Image {
         return Image(self.rawValue)

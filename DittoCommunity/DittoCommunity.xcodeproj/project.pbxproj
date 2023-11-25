@@ -14,6 +14,7 @@
 		6C3EB0422B11E170002D29C6 /* CategoryModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0412B11E170002D29C6 /* CategoryModalView.swift */; };
 		6C3EB0462B11E9DD002D29C6 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0452B11E9DD002D29C6 /* CustomAlertView.swift */; };
 		6C3EB0482B120483002D29C6 /* ActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0472B120483002D29C6 /* ActionSheetView.swift */; };
+		6C3EB04E2B121CF9002D29C6 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB04D2B121CF9002D29C6 /* CustomNavigationBar.swift */; };
 		FBDDEFB42B11C6D500CB6B7C /* DittoCommunityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */; };
 		FBDDEFB82B11C6D600CB6B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */; };
 		FBDDEFBB2B11C6D600CB6B7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDDEFBA2B11C6D600CB6B7C /* Preview Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		6C3EB0412B11E170002D29C6 /* CategoryModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModalView.swift; sourceTree = "<group>"; };
 		6C3EB0452B11E9DD002D29C6 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		6C3EB0472B120483002D29C6 /* ActionSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetView.swift; sourceTree = "<group>"; };
+		6C3EB04D2B121CF9002D29C6 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		FBDDEFB02B11C6D500CB6B7C /* DittoCommunity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DittoCommunity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoCommunityApp.swift; sourceTree = "<group>"; };
 		FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +87,22 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		6C3EB04B2B121CD5002D29C6 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				6C3EB04C2B121CDF002D29C6 /* NavigationBar */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		6C3EB04C2B121CDF002D29C6 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				6C3EB04D2B121CF9002D29C6 /* CustomNavigationBar.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
 		FBDDEFA72B11C6D500CB6B7C = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +122,7 @@
 		FBDDEFB22B11C6D500CB6B7C /* DittoCommunity */ = {
 			isa = PBXGroup;
 			children = (
+				6C3EB04B2B121CD5002D29C6 /* Component */,
 				3B3F22922B11D9D300351261 /* Info.plist */,
 				FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */,
 				FBDDEFE42B11E96F00CB6B7C /* Helper */,
@@ -294,6 +313,7 @@
 				FBDDEFB42B11C6D500CB6B7C /* DittoCommunityApp.swift in Sources */,
 				FBDDEFD72B11DA9D00CB6B7C /* Profile.swift in Sources */,
 				FBDDEFE02B11DF3100CB6B7C /* Image+Icon.swift in Sources */,
+				6C3EB04E2B121CF9002D29C6 /* CustomNavigationBar.swift in Sources */,
 				FBDDEFD02B11D2E500CB6B7C /* Color+DesignSystem.swift in Sources */,
 				FBDDEFED2B12155500CB6B7C /* UIscreen+ScreenSize.swift in Sources */,
 				FBDDEFDC2B11DC8E00CB6B7C /* SympathyTestView.swift in Sources */,
@@ -304,7 +324,6 @@
 				FBDDEFD22B11D2F100CB6B7C /* Font+DesignSystem.swift in Sources */,
 				FBDDEFE32B11E60D00CB6B7C /* LoginView.swift in Sources */,
 				FBDDEFDE2B11DE5800CB6B7C /* LoginViewModel.swift in Sources */,
-				FBDDEFD52B11DA9A00CB6B7C /* CustomModal.swift in Sources */,
 				FBDDEFEB2B12113600CB6B7C /* TestFinishView.swift in Sources */,
 				6C3EB0422B11E170002D29C6 /* CategoryModalView.swift in Sources */,
 				6C3EB0462B11E9DD002D29C6 /* CustomAlertView.swift in Sources */,
