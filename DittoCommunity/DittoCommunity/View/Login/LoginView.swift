@@ -12,7 +12,6 @@ struct LoginView: View {
     @StateObject var viewModel = LoginViewModel()
     
     var body: some View {
-        
         if viewModel.hasDoneTest {
             TestFinishView()
         } else {
@@ -20,10 +19,10 @@ struct LoginView: View {
                 VStack {
                     Spacer()
                     loginButtonList
-                        .padding(.bottom, 34)
+                        .padding(.bottom, 16)
                     bottomButton
                 }
-                .padding(.bottom, 58)
+                .padding(.bottom, 101)
                 .edgesIgnoringSafeArea(.bottom)
                 .padding(.horizontal, 20)
             }
