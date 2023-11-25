@@ -24,6 +24,14 @@
 		FBDDEFD22B11D2F100CB6B7C /* Font+DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFD12B11D2F100CB6B7C /* Font+DesignSystem.swift */; };
 		FBDDEFD72B11DA9D00CB6B7C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFD62B11DA9D00CB6B7C /* Profile.swift */; };
 		FBDDEFD92B11DAA100CB6B7C /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFD82B11DAA100CB6B7C /* Feed.swift */; };
+		FBDDEFDC2B11DC8E00CB6B7C /* SympathyTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFDB2B11DC8E00CB6B7C /* SympathyTestView.swift */; };
+		FBDDEFDE2B11DE5800CB6B7C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFDD2B11DE5800CB6B7C /* LoginViewModel.swift */; };
+		FBDDEFE02B11DF3100CB6B7C /* Image+Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFDF2B11DF3100CB6B7C /* Image+Icon.swift */; };
+		FBDDEFE32B11E60D00CB6B7C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFE22B11E60D00CB6B7C /* LoginView.swift */; };
+		FBDDEFE72B11E97F00CB6B7C /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFE62B11E97F00CB6B7C /* Color+Hex.swift */; };
+		FBDDEFE92B11EE3C00CB6B7C /* UINavigationController+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFE82B11EE3C00CB6B7C /* UINavigationController+UIGestureRecognizerDelegate.swift */; };
+		FBDDEFEB2B12113600CB6B7C /* TestFinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFEA2B12113600CB6B7C /* TestFinishView.swift */; };
+		FBDDEFED2B12155500CB6B7C /* UIscreen+ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFEC2B12155500CB6B7C /* UIscreen+ScreenSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +52,14 @@
 		FBDDEFD12B11D2F100CB6B7C /* Font+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+DesignSystem.swift"; sourceTree = "<group>"; };
 		FBDDEFD62B11DA9D00CB6B7C /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FBDDEFD82B11DAA100CB6B7C /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		FBDDEFDB2B11DC8E00CB6B7C /* SympathyTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SympathyTestView.swift; sourceTree = "<group>"; };
+		FBDDEFDD2B11DE5800CB6B7C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FBDDEFDF2B11DF3100CB6B7C /* Image+Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Icon.swift"; sourceTree = "<group>"; };
+		FBDDEFE22B11E60D00CB6B7C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FBDDEFE62B11E97F00CB6B7C /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		FBDDEFE82B11EE3C00CB6B7C /* UINavigationController+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
+		FBDDEFEA2B12113600CB6B7C /* TestFinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFinishView.swift; sourceTree = "<group>"; };
+		FBDDEFEC2B12155500CB6B7C /* UIscreen+ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIscreen+ScreenSize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +106,7 @@
 			children = (
 				3B3F22922B11D9D300351261 /* Info.plist */,
 				FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */,
+				FBDDEFE42B11E96F00CB6B7C /* Helper */,
 				FBDDEFCE2B11D2D100CB6B7C /* DesignSystem */,
 				3B3F228B2B11D77F00351261 /* Fonts */,
 				FBDDEFC62B11CC8700CB6B7C /* View */,
@@ -109,6 +126,7 @@
 		FBDDEFC62B11CC8700CB6B7C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FBDDEFE12B11E5FE00CB6B7C /* Login */,
 				FBDDEFD32B11DA8F00CB6B7C /* CustomModal */,
 				FBDDEFC92B11CC9B00CB6B7C /* Profile */,
 				FBDDEFC82B11CC9600CB6B7C /* Feed */,
@@ -147,6 +165,7 @@
 				FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */,
 				FBDDEFCF2B11D2E500CB6B7C /* Color+DesignSystem.swift */,
 				FBDDEFD12B11D2F100CB6B7C /* Font+DesignSystem.swift */,
+				FBDDEFDF2B11DF3100CB6B7C /* Image+Icon.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -160,6 +179,35 @@
 				6C3EB0452B11E9DD002D29C6 /* CustomAlertView.swift */,
 			);
 			path = CustomModal;
+			sourceTree = "<group>";
+		};
+		FBDDEFE12B11E5FE00CB6B7C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFE22B11E60D00CB6B7C /* LoginView.swift */,
+				FBDDEFDD2B11DE5800CB6B7C /* LoginViewModel.swift */,
+				FBDDEFDB2B11DC8E00CB6B7C /* SympathyTestView.swift */,
+				FBDDEFEA2B12113600CB6B7C /* TestFinishView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FBDDEFE42B11E96F00CB6B7C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFE52B11E97800CB6B7C /* Extension */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FBDDEFE52B11E97800CB6B7C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFE62B11E97F00CB6B7C /* Color+Hex.swift */,
+				FBDDEFEC2B12155500CB6B7C /* UIscreen+ScreenSize.swift */,
+				FBDDEFE82B11EE3C00CB6B7C /* UINavigationController+UIGestureRecognizerDelegate.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,9 +293,19 @@
 				6C3EB0482B120483002D29C6 /* ActionSheetView.swift in Sources */,
 				FBDDEFB42B11C6D500CB6B7C /* DittoCommunityApp.swift in Sources */,
 				FBDDEFD72B11DA9D00CB6B7C /* Profile.swift in Sources */,
+				FBDDEFE02B11DF3100CB6B7C /* Image+Icon.swift in Sources */,
 				FBDDEFD02B11D2E500CB6B7C /* Color+DesignSystem.swift in Sources */,
+				FBDDEFED2B12155500CB6B7C /* UIscreen+ScreenSize.swift in Sources */,
+				FBDDEFDC2B11DC8E00CB6B7C /* SympathyTestView.swift in Sources */,
+				FBDDEFE72B11E97F00CB6B7C /* Color+Hex.swift in Sources */,
 				FBDDEFD92B11DAA100CB6B7C /* Feed.swift in Sources */,
 				FBDDEFCD2B11CCB700CB6B7C /* MainTabView.swift in Sources */,
+				FBDDEFE92B11EE3C00CB6B7C /* UINavigationController+UIGestureRecognizerDelegate.swift in Sources */,
+				FBDDEFD22B11D2F100CB6B7C /* Font+DesignSystem.swift in Sources */,
+				FBDDEFE32B11E60D00CB6B7C /* LoginView.swift in Sources */,
+				FBDDEFDE2B11DE5800CB6B7C /* LoginViewModel.swift in Sources */,
+				FBDDEFD52B11DA9A00CB6B7C /* CustomModal.swift in Sources */,
+				FBDDEFEB2B12113600CB6B7C /* TestFinishView.swift in Sources */,
 				6C3EB0422B11E170002D29C6 /* CategoryModalView.swift in Sources */,
 				6C3EB0462B11E9DD002D29C6 /* CustomAlertView.swift in Sources */,
 				FBDDEFD22B11D2F100CB6B7C /* Font+DesignSystem.swift in Sources */,
@@ -397,7 +455,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,7 +492,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
