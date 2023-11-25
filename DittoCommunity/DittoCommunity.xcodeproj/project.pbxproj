@@ -13,6 +13,8 @@
 		FBDDEFC32B11C75400CB6B7C /* MightyCombine in Frameworks */ = {isa = PBXBuildFile; productRef = FBDDEFC22B11C75400CB6B7C /* MightyCombine */; };
 		FBDDEFC52B11C75400CB6B7C /* MightySwift in Frameworks */ = {isa = PBXBuildFile; productRef = FBDDEFC42B11C75400CB6B7C /* MightySwift */; };
 		FBDDEFCD2B11CCB700CB6B7C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFCC2B11CCB700CB6B7C /* MainTabView.swift */; };
+		FBDDEFD02B11D2E500CB6B7C /* Color+DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFCF2B11D2E500CB6B7C /* Color+DesignSystem.swift */; };
+		FBDDEFD22B11D2F100CB6B7C /* Font+DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFD12B11D2F100CB6B7C /* Font+DesignSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBDDEFBA2B11C6D600CB6B7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FBDDEFCC2B11CCB700CB6B7C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		FBDDEFCF2B11D2E500CB6B7C /* Color+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+DesignSystem.swift"; sourceTree = "<group>"; };
+		FBDDEFD12B11D2F100CB6B7C /* Font+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+DesignSystem.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */,
+				FBDDEFCE2B11D2D100CB6B7C /* DesignSystem */,
 				FBDDEFC62B11CC8700CB6B7C /* View */,
-				FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */,
 				FBDDEFB92B11C6D600CB6B7C /* Preview Content */,
 			);
 			path = DittoCommunity;
@@ -101,6 +105,16 @@
 			children = (
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		FBDDEFCE2B11D2D100CB6B7C /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */,
+				FBDDEFCF2B11D2E500CB6B7C /* Color+DesignSystem.swift */,
+				FBDDEFD12B11D2F100CB6B7C /* Font+DesignSystem.swift */,
+			);
+			path = DesignSystem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,7 +195,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBDDEFB42B11C6D500CB6B7C /* DittoCommunityApp.swift in Sources */,
+				FBDDEFD02B11D2E500CB6B7C /* Color+DesignSystem.swift in Sources */,
 				FBDDEFCD2B11CCB700CB6B7C /* MainTabView.swift in Sources */,
+				FBDDEFD22B11D2F100CB6B7C /* Font+DesignSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
