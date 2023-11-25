@@ -70,7 +70,7 @@ struct MyPageView: View {
                         Text("공감 지수")
                         
                         Text(String(Int(sympathyValue)) + "%")
-                            .foregroundColor(.orange)
+                            .foregroundColor(.primary02)
                         
                         Spacer()
                     }
@@ -101,7 +101,7 @@ struct MyPageView: View {
 
                             RoundedRectangle(cornerRadius: 10)
                                 .frame(width: geo.size.width * CGFloat((sympathyValue / 100)),height: 10)
-                            .foregroundColor(.orange)
+                            .foregroundColor(.primary02)
                             
                             Image("Union")
                             .padding(.top)

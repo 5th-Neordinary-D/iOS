@@ -55,7 +55,7 @@ struct OtherProfile: View {
                                 
                                 Text(String(Int(sympathyValue)) + "%")
                                     .font(.h4)
-                                    .foregroundColor(.orange)
+                                    .foregroundColor(.primary02)
                             }
                         }
                         
@@ -70,7 +70,7 @@ struct OtherProfile: View {
                                 .padding()
                                 .background(
                                     RoundedRectangle(cornerRadius: 4)
-                                        .fill(.orange)
+                                        .fill(Color.primary02)
                                 )
                         })
                     }

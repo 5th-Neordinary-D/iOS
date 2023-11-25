@@ -72,9 +72,10 @@ struct LoginView: View {
     }
 }
 
-#Preview {
-    LoginView()
-}
+//#Preview {
+//    LoginView()
+//}
+
 
 enum LoginMethod: CaseIterable {
     
