@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3F228D2B11D7DC00351261 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3F228C2B11D7DC00351261 /* Pretendard-Bold.otf */; };
+		3B3F228F2B11D7FB00351261 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3F228E2B11D7FB00351261 /* Pretendard-SemiBold.otf */; };
+		3B3F22912B11D80600351261 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3F22902B11D80600351261 /* Pretendard-Regular.otf */; };
 		FBDDEFB42B11C6D500CB6B7C /* DittoCommunityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */; };
 		FBDDEFB82B11C6D600CB6B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */; };
 		FBDDEFBB2B11C6D600CB6B7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDDEFBA2B11C6D600CB6B7C /* Preview Assets.xcassets */; };
@@ -21,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B3F228C2B11D7DC00351261 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		3B3F228E2B11D7FB00351261 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		3B3F22902B11D80600351261 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		3B3F22922B11D9D300351261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FBDDEFB02B11C6D500CB6B7C /* DittoCommunity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DittoCommunity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoCommunityApp.swift; sourceTree = "<group>"; };
 		FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +53,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B3F228B2B11D77F00351261 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3B3F228C2B11D7DC00351261 /* Pretendard-Bold.otf */,
+				3B3F228E2B11D7FB00351261 /* Pretendard-SemiBold.otf */,
+				3B3F22902B11D80600351261 /* Pretendard-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		FBDDEFA72B11C6D500CB6B7C = {
 			isa = PBXGroup;
 			children = (
@@ -65,8 +82,10 @@
 		FBDDEFB22B11C6D500CB6B7C /* DittoCommunity */ = {
 			isa = PBXGroup;
 			children = (
+				3B3F22922B11D9D300351261 /* Info.plist */,
 				FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */,
 				FBDDEFCE2B11D2D100CB6B7C /* DesignSystem */,
+				3B3F228B2B11D77F00351261 /* Fonts */,
 				FBDDEFC62B11CC8700CB6B7C /* View */,
 				FBDDEFB92B11C6D600CB6B7C /* Preview Content */,
 			);
@@ -200,7 +219,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBDDEFBB2B11C6D600CB6B7C /* Preview Assets.xcassets in Resources */,
+				3B3F228D2B11D7DC00351261 /* Pretendard-Bold.otf in Resources */,
+				3B3F22912B11D80600351261 /* Pretendard-Regular.otf in Resources */,
 				FBDDEFB82B11C6D600CB6B7C /* Assets.xcassets in Resources */,
+				3B3F228F2B11D7FB00351261 /* Pretendard-SemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +376,9 @@
 				DEVELOPMENT_TEAM = 76AJ433CP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DittoCommunity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "\"\"";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -388,6 +413,9 @@
 				DEVELOPMENT_TEAM = 76AJ433CP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DittoCommunity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "\"\"";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
