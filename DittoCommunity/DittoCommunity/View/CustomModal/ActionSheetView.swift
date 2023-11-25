@@ -11,7 +11,7 @@ struct ActionSheetView: View {
     
     let items: [(String, () -> Void)]
     
-    init(items: [(String, () -> Void)] = [("프로필 방문", {}), ("프로필 방문", {}), ("프로필 방문", {})]) {
+    init(items: [(String, () -> Void)] = [("프로필 방문", {}), ("프로필 방문2", {}), ("프로필 방문3", {})]) {
         self.items = items
     }
     
