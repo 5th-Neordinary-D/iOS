@@ -17,7 +17,9 @@ struct LoginView: View {
         } else {
             NavigationView {
                 VStack {
-                    Spacer()
+                    Image("login")
+                        .padding(.top, 98)
+                        .padding(.bottom, 32)
                     loginButtonList
                         .padding(.bottom, 16)
                     bottomButton
@@ -71,11 +73,6 @@ struct LoginView: View {
         .frame(height: 22)
     }
 }
-
-//#Preview {
-//    LoginView()
-//}
-
 
 enum LoginMethod: CaseIterable {
     
@@ -134,5 +131,11 @@ enum LoginMethod: CaseIterable {
         case .google:
             return "구글로 로그인"
         }
+    }
+}
+
+struct LoginView_Previews: PreviewProvider {
+    static var previews: some View {
+        LoginView()
     }
 }

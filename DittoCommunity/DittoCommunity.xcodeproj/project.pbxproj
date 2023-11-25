@@ -16,6 +16,11 @@
 		6C3EB0462B11E9DD002D29C6 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0452B11E9DD002D29C6 /* CustomAlertView.swift */; };
 		6C3EB0482B120483002D29C6 /* ActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0472B120483002D29C6 /* ActionSheetView.swift */; };
 		6C3EB04E2B121CF9002D29C6 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB04D2B121CF9002D29C6 /* CustomNavigationBar.swift */; };
+		FB73324F2B126BB5007562A7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = FB73324E2B126BB5007562A7 /* Lottie */; };
+		FB7332512B126BC3007562A7 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7332502B126BC3007562A7 /* LottieView.swift */; };
+		FB7332532B126BF3007562A7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = FB7332522B126BF3007562A7 /* Lottie */; };
+		FB7332572B126CE9007562A7 /* emotion2.json in Resources */ = {isa = PBXBuildFile; fileRef = FB7332552B126CE9007562A7 /* emotion2.json */; };
+		FB7332582B126CE9007562A7 /* emotion3.json in Resources */ = {isa = PBXBuildFile; fileRef = FB7332562B126CE9007562A7 /* emotion3.json */; };
 		FBB1DA0A2B125CD800E8C57A /* View+Redacted.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1DA092B125CD800E8C57A /* View+Redacted.swift */; };
 		FBB1DA0D2B12607E00E8C57A /* FeedDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1DA0C2B12607E00E8C57A /* FeedDetailViewModel.swift */; };
 		FBDDEFB42B11C6D500CB6B7C /* DittoCommunityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */; };
@@ -59,6 +64,9 @@
 		6C3EB0452B11E9DD002D29C6 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		6C3EB0472B120483002D29C6 /* ActionSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetView.swift; sourceTree = "<group>"; };
 		6C3EB04D2B121CF9002D29C6 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		FB7332502B126BC3007562A7 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		FB7332552B126CE9007562A7 /* emotion2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emotion2.json; sourceTree = "<group>"; };
+		FB7332562B126CE9007562A7 /* emotion3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emotion3.json; sourceTree = "<group>"; };
 		FBB1DA092B125CD800E8C57A /* View+Redacted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Redacted.swift"; sourceTree = "<group>"; };
 		FBB1DA0C2B12607E00E8C57A /* FeedDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewModel.swift; sourceTree = "<group>"; };
 		FBDDEFB02B11C6D500CB6B7C /* DittoCommunity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DittoCommunity.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +105,8 @@
 			files = (
 				FBDDEFC52B11C75400CB6B7C /* MightySwift in Frameworks */,
 				FBDDEFC32B11C75400CB6B7C /* MightyCombine in Frameworks */,
+				FB73324F2B126BB5007562A7 /* Lottie in Frameworks */,
+				FB7332532B126BF3007562A7 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,8 +128,18 @@
 			children = (
 				6C3EB04D2B121CF9002D29C6 /* CustomNavigationBar.swift */,
 				FBDDF0032B12361E00CB6B7C /* ObservableScrollView.swift */,
+				FB7332502B126BC3007562A7 /* LottieView.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		FB7332542B126CDB007562A7 /* Lotties */ = {
+			isa = PBXGroup;
+			children = (
+				FB7332552B126CE9007562A7 /* emotion2.json */,
+				FB7332562B126CE9007562A7 /* emotion3.json */,
+			);
+			path = Lotties;
 			sourceTree = "<group>";
 		};
 		FBB1DA0B2B12607300E8C57A /* FeedDetail */ = {
@@ -212,6 +232,7 @@
 		FBDDEFCE2B11D2D100CB6B7C /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				FB7332542B126CDB007562A7 /* Lotties */,
 				3B3F228B2B11D77F00351261 /* Fonts */,
 				FBDDEFD32B11DA8F00CB6B7C /* CustomModal */,
 				6C3EB04B2B121CD5002D29C6 /* Component */,
@@ -319,6 +340,8 @@
 			packageProductDependencies = (
 				FBDDEFC22B11C75400CB6B7C /* MightyCombine */,
 				FBDDEFC42B11C75400CB6B7C /* MightySwift */,
+				FB73324E2B126BB5007562A7 /* Lottie */,
+				FB7332522B126BF3007562A7 /* Lottie */,
 			);
 			productName = DittoCommunity;
 			productReference = FBDDEFB02B11C6D500CB6B7C /* DittoCommunity.app */;
@@ -350,6 +373,7 @@
 			mainGroup = FBDDEFA72B11C6D500CB6B7C;
 			packageReferences = (
 				FBDDEFC12B11C75400CB6B7C /* XCRemoteSwiftPackageReference "MightyCombine" */,
+				FB73324D2B126BB5007562A7 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = FBDDEFB12B11C6D500CB6B7C /* Products */;
 			projectDirPath = "";
@@ -365,9 +389,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7332572B126CE9007562A7 /* emotion2.json in Resources */,
 				FBDDEFBB2B11C6D600CB6B7C /* Preview Assets.xcassets in Resources */,
 				3B3F228D2B11D7DC00351261 /* Pretendard-Bold.otf in Resources */,
 				3B3F22912B11D80600351261 /* Pretendard-Regular.otf in Resources */,
+				FB7332582B126CE9007562A7 /* emotion3.json in Resources */,
 				FBDDEFB82B11C6D600CB6B7C /* Assets.xcassets in Resources */,
 				3B3F228F2B11D7FB00351261 /* Pretendard-SemiBold.otf in Resources */,
 			);
@@ -381,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBDDEFF32B122D2C00CB6B7C /* FeedCellView.swift in Sources */,
+				FB7332512B126BC3007562A7 /* LottieView.swift in Sources */,
 				FBDDF0022B12349B00CB6B7C /* UIApplication+.swift in Sources */,
 				FBDDF00C2B124A4200CB6B7C /* DetailFeed.swift in Sources */,
 				3BF500442B1223E90061DABF /* OtherProfile.swift in Sources */,
@@ -550,7 +577,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DittoCommunity/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "\"\"";
+				INFOPLIST_KEY_CFBundleDisplayName = ditto;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -587,7 +614,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DittoCommunity/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "\"\"";
+				INFOPLIST_KEY_CFBundleDisplayName = ditto;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -636,6 +663,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FB73324D2B126BB5007562A7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.3;
+			};
+		};
 		FBDDEFC12B11C75400CB6B7C /* XCRemoteSwiftPackageReference "MightyCombine" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/MightyCombine/MightyCombine.git";
@@ -647,6 +682,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FB73324E2B126BB5007562A7 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB73324D2B126BB5007562A7 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		FB7332522B126BF3007562A7 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB73324D2B126BB5007562A7 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
 		FBDDEFC22B11C75400CB6B7C /* MightyCombine */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FBDDEFC12B11C75400CB6B7C /* XCRemoteSwiftPackageReference "MightyCombine" */;

@@ -31,15 +31,9 @@ struct MyPageView: View {
                     .padding(.vertical, 10)
                     
                     HStack{
-                        
-                        //                Image("프로필")
-                        //                    .resizable()
-                        //                    .scaledToFit()
-                        //                    .frame(width: 60, height: 60)
-                        //                    .clipShape(Circle())
-                        
-                        Circle()
-                            .foregroundColor(.black)
+
+                        Image("placeholder")
+                            .resizable()
                             .frame(width: 60, height: 60)
                         
                         

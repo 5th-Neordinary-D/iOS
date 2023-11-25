@@ -25,10 +25,10 @@ struct SympathyTestView: View {
             VStack(spacing: 0) {
                 title
                     .padding(.bottom, 44)
-                Color.gray
+                Image("test" + String(pageIndex + 1))
+                    .resizable()
+                    .scaledToFit()
                     .frame(maxWidth: .infinity)
-                    .frame(height: 240)
-                    .padding(.bottom, 36)
                 cellList
                 Spacer()
                 nextButton

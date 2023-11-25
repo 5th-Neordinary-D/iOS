@@ -14,15 +14,19 @@ struct TestFinishView: View {
     var body: some View {
         VStack(spacing: 8) {
             Spacer()
-            Text("공감 테스트 완료")
+            Image("finish")
+                .padding(.bottom, 27)
+            Text("진스님의 디토지수는 100% 입니다.")
                 .font(.h2)
                 .foregroundColor(.gray07)
-            Text("열심히 활동하면 공감지수를 올릴 수 있어요")
+            Text("당신은 이미 공감왕! 디토에서 당신의 공감을\n기다리는 사람들에게 감동을 전하세요.")
+                .multilineTextAlignment(.center)
                 .font(.b2)
                 .foregroundColor(.gray05)
             Spacer()
             bottomButton
-        }.padding(.horizontal, 20)
+        }
+        .padding(.horizontal, 20)
     }
     
     @ViewBuilder var bottomButton: some View {
@@ -41,6 +45,8 @@ struct TestFinishView: View {
     }
 }
 
-//#Preview {
-//    TestFinishView()
-//}
+struct TestFinishView_Previews: PreviewProvider {
+    static var previews: some View {
+        TestFinishView()
+    }
+}

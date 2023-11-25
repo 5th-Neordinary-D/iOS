@@ -33,7 +33,6 @@ struct FeedDetailView: View {
             .redacted(viewModel.feed == nil)
             commentInput
         }
-        .edgesIgnoringSafeArea(.bottom)
     }
     
     @ViewBuilder var topBar: some View {
@@ -66,7 +65,8 @@ struct FeedDetailView: View {
     
     @ViewBuilder var userInfoView: some View {
         HStack(spacing: 10) {
-            Circle()
+            Image("placeholder")
+                .resizable()
                 .frame(width: 44, height: 44)
                 .foregroundColor(.gray02)
             VStack(alignment: .leading, spacing: 0) {
@@ -152,18 +152,22 @@ struct FeedDetailView: View {
                 .onTapGesture {
                     viewModel.showLottieContainer = false
                 }
-            Circle()
-                .frame(width: 44, height: 44)
-                .foregroundColor(.gray03)
-                .onTapGesture {
-                    viewModel.showLottieContainer = false
-                }
-            Circle()
-                .frame(width: 44, height: 44)
-                .foregroundColor(.gray03)
-                .onTapGesture {
-                    viewModel.showLottieContainer = false
-                }
+            if let data = loadAnimationData(named: "emotion2") {
+                LottieView(data: data)
+                    .frame(width: 44, height: 44)
+                    .clipShape(Circle())
+                    .onTapGesture {
+                        viewModel.showLottieContainer = false
+                    }
+            }
+            if let data = loadAnimationData(named: "emotion3") {
+                LottieView(data: data)
+                    .frame(width: 44, height: 44)
+                    .clipShape(Circle())
+                    .onTapGesture {
+                        viewModel.showLottieContainer = false
+                    }
+            }
             Circle()
                 .frame(width: 44, height: 44)
                 .foregroundColor(.gray03)
@@ -200,8 +204,8 @@ struct FeedDetailView: View {
     @ViewBuilder func commentCell(_ comment: DetailFeed.Comment) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack(spacing: 8) {
-                Circle()
-                    .foregroundColor(.gray02)
+                Image("placeholder")
+                    .resizable()
                     .frame(width: 36, height: 36)
                 VStack(alignment: .leading, spacing: 0) {
                     Text(comment.author.username)
@@ -247,12 +251,21 @@ struct FeedDetailView: View {
             .padding(.top, 12)
             Spacer()
         }
-        .frame(height: 102)
+        .frame(height: 81)
         .overlay(alignment: .top) {
             Color.gray03.frame(height: 1)
         }
     }
 }
+
+private func loadAnimationData(named name: String) -> Data? {
+    guard let url = Bundle.main.url(forResource: name, withExtension: "json"),
+          let data = try? Data(contentsOf: url) else {
+        return nil
+    }
+    return data
+}
+
 
 struct FeedDetailView_Previews: PreviewProvider {
     static var previews: some View {

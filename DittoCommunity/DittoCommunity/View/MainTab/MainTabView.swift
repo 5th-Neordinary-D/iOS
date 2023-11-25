@@ -58,7 +58,7 @@ struct MainTabView: View {
                     .onTapGesture {
                         self.viewModel.currentTab = .home
                     }
-                    Image(systemName: "plus.circle")
+                    Icon.plus.image
                         .onTapGesture {
                             viewModel.showFeedPostView = true
                         }
