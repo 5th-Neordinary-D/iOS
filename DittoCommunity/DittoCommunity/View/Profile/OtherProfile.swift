@@ -15,20 +15,27 @@ struct OtherProfile: View {
     var body: some View {
         NavigationView {
             VStack{
+                
+                CustomNavigationBar(
+                    isDisplayLeadingBtn: false,
+                    isDisplayTrailingBtn: true,
+                    leadingItems: [],
+                    trailingItems: [(Icon.more_vertical, {})]
+                )
+                
                 VStack(spacing: 0){
                     
-                    HStack{
-                        Spacer()
-                        
-                        NavigationLink(destination: {
-                            EmptyView()
-                        }, label: {
-                            Image("more-vertical")
-                        })
-                        
-                    }
-                    
-                    .padding(.vertical, 10)
+//                    HStack{
+//                        Spacer()
+//
+//                        NavigationLink(destination: {
+//                            EmptyView()
+//                        }, label: {
+//                            Image("more-vertical")
+//                        })
+//
+//                    }
+//                    .padding(.vertical, 10)
                     
                     HStack{
                         
@@ -81,7 +88,23 @@ struct OtherProfile: View {
                 
                 MyPageCustomTopTabBar(tabIndex: $tabIndex)
                 
-                Spacer()
+                if tabIndex == 1 {
+                    List{
+                        ForEach(1...10, id: \.self) { _ in
+                            MyPageListCell()
+                        }
+                    }
+                    .listStyle(.plain)
+                }
+                
+                else if tabIndex == 2 {
+                    List{
+                        ForEach(1...10, id: \.self) { _ in
+                            MyPageListCell()
+                        }
+                    }
+                    .listStyle(.plain)
+                }
             }
         }
     }

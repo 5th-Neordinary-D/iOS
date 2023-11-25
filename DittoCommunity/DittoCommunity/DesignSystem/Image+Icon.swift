@@ -14,6 +14,8 @@ enum Icon: String {
     case kakao = "kakao"
     case google = "google"
     case skip = "skip"
+    case setting = "setting"
+    case more_vertical = "more-vertical"
     
     var image: Image {
         return Image(self.rawValue)

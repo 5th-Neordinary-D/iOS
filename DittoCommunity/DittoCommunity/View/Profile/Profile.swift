@@ -14,21 +14,30 @@ struct MyPageView: View {
     
     var body: some View {
         NavigationView {
-            VStack{
+            VStack(spacing: 0){
+                
+                CustomNavigationBar(
+                    isDisplayLeadingBtn: false,
+                    isDisplayTrailingBtn: true,
+                    leadingItems: [],
+                    trailingItems: [(Icon.setting, {})]
+                )
+                
                 VStack(spacing: 0){
                     
-                    HStack{
-                        Spacer()
-                        
-                        NavigationLink(destination: {
-                            EmptyView()
-                        }, label: {
-                            Image("setting")
-                        })
-                        
-                    }
                     
-                    .padding(.vertical, 10)
+                    
+//                    HStack{
+//                        Spacer()
+//
+//                        NavigationLink(destination: {
+//                            EmptyView()
+//                        }, label: {
+//                            Image("setting")
+//                        })
+//
+//                    }
+//                    .padding(.vertical, 10)
                     
                     HStack{
                         
@@ -77,19 +86,6 @@ struct MyPageView: View {
                     .font(.h4)
                     .padding(.bottom, 16)
                     
-
-//                    ZStack{
-//
-//                        RoundedRectangle(cornerRadius: 10)
-//                            .frame(height: 10)
-//                            .foregroundColor(.gray02)
-//
-//
-//                        RoundedRectangle(cornerRadius: 10)
-//                            .frame(height: 10)
-//                            .foregroundColor(.orange)
-//                    }
-//                    .padding(.bottom, 36)
                     
                     GeometryReader { geo in
                         
@@ -115,7 +111,23 @@ struct MyPageView: View {
                 
                 MyPageCustomTopTabBar(tabIndex: $tabIndex)
                 
-                Spacer()
+                if tabIndex == 1 {
+                    List{
+                        ForEach(1...10, id: \.self) { _ in
+                            MyPageListCell()
+                        }
+                    }
+                    .listStyle(.plain)
+                }
+                
+                else if tabIndex == 2 {
+                    List{
+                        ForEach(1...10, id: \.self) { _ in
+                            MyPageListCell()
+                        }
+                    }
+                    .listStyle(.plain)
+                }
             }
         }
     }
@@ -127,7 +139,6 @@ struct MyPageCustomTopTabBar: View {
     @Binding var tabIndex: Int
     
     var body: some View {
-        GeometryReader { geo in
             HStack(spacing: 0){
                 
                 VStack{
@@ -137,10 +148,9 @@ struct MyPageCustomTopTabBar: View {
                         .onTapGesture {
                             tabIndex = 1
                         }
-                    Rectangle().frame(width: geo.size.width / 2, height: tabIndex == 1 ? 3 : 1)
+                    Rectangle().frame(width: .infinity, height: tabIndex == 1 ? 3 : 1)
                         .foregroundColor(tabIndex == 1 ? .black : .gray03)
                 }
-                .position(x: geo.size.width / 4)
                 
                 
                 VStack{
@@ -150,33 +160,57 @@ struct MyPageCustomTopTabBar: View {
                         .onTapGesture {
                             tabIndex = 2
                         }
-                    Rectangle().frame(width: geo.size.width / 2, height: tabIndex == 2 ? 3 : 1)
+                    Rectangle().frame(width: .infinity, height: tabIndex == 2 ? 3 : 1)
                         .foregroundColor(tabIndex == 2 ? .black : .gray03)
                 }
-                .position(x: geo.size.width / 4)
                 
             }
-            
-        }
     }
 }
 
 struct MyPageListCell: View {
     
     var body: some View {
-        VStack {
-            Text("제목")
+        VStack(alignment: .leading) {
+            Text("직장에서 이런 일이 있었네요...")
+                .font(.h3)
+                .foregroundColor(.gray06)
+              .frame(width: 236, alignment: .topLeading)
+              .padding(.bottom, 1)
+              .padding(.top, 10)
             
-            Text("내용kjflkajsdljasdjkklsncsahoidsajklcnbjsahdiosakjlncbksajfhosaihdknsakbfjsahdfoisaklncbsakjdsaㅁㄴ언마ㅠㄹㄴㅁ뢘며어ㅕㅗㄴ몽챈며ㅙ촌머ㅗ치ㅓㄴ모채ㅗㄴ매초매ㅗ")
+            Text("제가 작성한 기획서를 매번 부족하다는 이유로 까고,,, 직장 상사의 감정 쓰레기통이 된 거 같아요.. ㅠ")
+                .font(.b2)
+                .foregroundColor(.gray05)
                 .lineLimit(3)
                 .truncationMode(.tail)
-                .padding()
             
-            HStack{
+            HStack(spacing: 0){
+                Text("인간관계")
                 
-            }
+                Spacer()
+                
+                Image("Heart.fill")
+                    .frame(width: 20, height: 20)
+                    .padding(.trailing, 4)
+                
+                Text("2")
+                    .padding(.trailing, 14)
+                
+                
+                Image("bubble")
+                    .frame(width: 20, height: 20)
+                    .padding(.trailing, 4)
+                
+                Text("1")
             
+            }
+            .font(.b3)
+            .foregroundColor(.gray05)
+            
+//            Divider()
         }
+        .padding(.horizontal, 20)
     }
 }
 

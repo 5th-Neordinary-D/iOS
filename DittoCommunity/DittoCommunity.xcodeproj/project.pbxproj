@@ -11,6 +11,8 @@
 		3B3F228F2B11D7FB00351261 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3F228E2B11D7FB00351261 /* Pretendard-SemiBold.otf */; };
 		3B3F22912B11D80600351261 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3F22902B11D80600351261 /* Pretendard-Regular.otf */; };
 		3BF500442B1223E90061DABF /* OtherProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF500432B1223E90061DABF /* OtherProfile.swift */; };
+		3BF500472B122FEC0061DABF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF500462B122FEC0061DABF /* SearchView.swift */; };
+		3BF500492B123A430061DABF /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF500482B123A430061DABF /* AlarmView.swift */; };
 		6C3EB03E2B11E070002D29C6 /* TestCompleteModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB03D2B11E070002D29C6 /* TestCompleteModalView.swift */; };
 		6C3EB0422B11E170002D29C6 /* CategoryModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0412B11E170002D29C6 /* CategoryModalView.swift */; };
 		6C3EB0462B11E9DD002D29C6 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0452B11E9DD002D29C6 /* CustomAlertView.swift */; };
@@ -42,6 +44,8 @@
 		3B3F22902B11D80600351261 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		3B3F22922B11D9D300351261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3BF500432B1223E90061DABF /* OtherProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherProfile.swift; sourceTree = "<group>"; };
+		3BF500462B122FEC0061DABF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		3BF500482B123A430061DABF /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
 		6C3EB03D2B11E070002D29C6 /* TestCompleteModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCompleteModalView.swift; sourceTree = "<group>"; };
 		6C3EB0412B11E170002D29C6 /* CategoryModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModalView.swift; sourceTree = "<group>"; };
 		6C3EB0452B11E9DD002D29C6 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
@@ -87,6 +91,14 @@
 				3B3F22902B11D80600351261 /* Pretendard-Regular.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3BF500452B122FC60061DABF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				3BF500462B122FEC0061DABF /* SearchView.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		6C3EB04B2B121CD5002D29C6 /* Component */ = {
@@ -147,6 +159,7 @@
 		FBDDEFC62B11CC8700CB6B7C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3BF500452B122FC60061DABF /* Search */,
 				FBDDEFE12B11E5FE00CB6B7C /* Login */,
 				FBDDEFD32B11DA8F00CB6B7C /* CustomModal */,
 				FBDDEFC92B11CC9B00CB6B7C /* Profile */,
@@ -176,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				FBDDEFD62B11DA9D00CB6B7C /* Profile.swift */,
+				3BF500482B123A430061DABF /* AlarmView.swift */,
 				3BF500432B1223E90061DABF /* OtherProfile.swift */,
 			);
 			path = Profile;
@@ -318,10 +332,12 @@
 				FBDDEFD72B11DA9D00CB6B7C /* Profile.swift in Sources */,
 				FBDDEFE02B11DF3100CB6B7C /* Image+Icon.swift in Sources */,
 				6C3EB04E2B121CF9002D29C6 /* CustomNavigationBar.swift in Sources */,
+				3BF500492B123A430061DABF /* AlarmView.swift in Sources */,
 				FBDDEFD02B11D2E500CB6B7C /* Color+DesignSystem.swift in Sources */,
 				FBDDEFED2B12155500CB6B7C /* UIscreen+ScreenSize.swift in Sources */,
 				FBDDEFDC2B11DC8E00CB6B7C /* SympathyTestView.swift in Sources */,
 				FBDDEFE72B11E97F00CB6B7C /* Color+Hex.swift in Sources */,
+				3BF500472B122FEC0061DABF /* SearchView.swift in Sources */,
 				FBDDEFD92B11DAA100CB6B7C /* Feed.swift in Sources */,
 				FBDDEFCD2B11CCB700CB6B7C /* MainTabView.swift in Sources */,
 				FBDDEFE92B11EE3C00CB6B7C /* UINavigationController+UIGestureRecognizerDelegate.swift in Sources */,
