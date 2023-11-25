@@ -10,6 +10,7 @@
 		3B3F228D2B11D7DC00351261 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3F228C2B11D7DC00351261 /* Pretendard-Bold.otf */; };
 		3B3F228F2B11D7FB00351261 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3F228E2B11D7FB00351261 /* Pretendard-SemiBold.otf */; };
 		3B3F22912B11D80600351261 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3F22902B11D80600351261 /* Pretendard-Regular.otf */; };
+		3BF500442B1223E90061DABF /* OtherProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF500432B1223E90061DABF /* OtherProfile.swift */; };
 		6C3EB03E2B11E070002D29C6 /* TestCompleteModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB03D2B11E070002D29C6 /* TestCompleteModalView.swift */; };
 		6C3EB0422B11E170002D29C6 /* CategoryModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0412B11E170002D29C6 /* CategoryModalView.swift */; };
 		6C3EB0462B11E9DD002D29C6 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0452B11E9DD002D29C6 /* CustomAlertView.swift */; };
@@ -40,6 +41,7 @@
 		3B3F228E2B11D7FB00351261 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		3B3F22902B11D80600351261 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		3B3F22922B11D9D300351261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3BF500432B1223E90061DABF /* OtherProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherProfile.swift; sourceTree = "<group>"; };
 		6C3EB03D2B11E070002D29C6 /* TestCompleteModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCompleteModalView.swift; sourceTree = "<group>"; };
 		6C3EB0412B11E170002D29C6 /* CategoryModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModalView.swift; sourceTree = "<group>"; };
 		6C3EB0452B11E9DD002D29C6 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				FBDDEFD62B11DA9D00CB6B7C /* Profile.swift */,
+				3BF500432B1223E90061DABF /* OtherProfile.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF500442B1223E90061DABF /* OtherProfile.swift in Sources */,
 				6C3EB0482B120483002D29C6 /* ActionSheetView.swift in Sources */,
 				FBDDEFB42B11C6D500CB6B7C /* DittoCommunityApp.swift in Sources */,
 				FBDDEFD72B11DA9D00CB6B7C /* Profile.swift in Sources */,
