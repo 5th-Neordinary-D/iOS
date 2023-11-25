@@ -18,6 +18,7 @@
 		FBDDEFD52B11DA9A00CB6B7C /* CustomModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFD42B11DA9A00CB6B7C /* CustomModal.swift */; };
 		FBDDEFD72B11DA9D00CB6B7C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFD62B11DA9D00CB6B7C /* Profile.swift */; };
 		FBDDEFD92B11DAA100CB6B7C /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFD82B11DAA100CB6B7C /* Feed.swift */; };
+		FBDDEFDC2B11DC8E00CB6B7C /* SympathyTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFDB2B11DC8E00CB6B7C /* SympathyTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		FBDDEFD42B11DA9A00CB6B7C /* CustomModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModal.swift; sourceTree = "<group>"; };
 		FBDDEFD62B11DA9D00CB6B7C /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FBDDEFD82B11DAA100CB6B7C /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		FBDDEFDB2B11DC8E00CB6B7C /* SympathyTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SympathyTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		FBDDEFC62B11CC8700CB6B7C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FBDDEFDA2B11DC7C00CB6B7C /* SympathyTest */,
 				FBDDEFD32B11DA8F00CB6B7C /* CustomModal */,
 				FBDDEFC92B11CC9B00CB6B7C /* Profile */,
 				FBDDEFC82B11CC9600CB6B7C /* Feed */,
@@ -132,6 +135,14 @@
 				FBDDEFD42B11DA9A00CB6B7C /* CustomModal.swift */,
 			);
 			path = CustomModal;
+			sourceTree = "<group>";
+		};
+		FBDDEFDA2B11DC7C00CB6B7C /* SympathyTest */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFDB2B11DC8E00CB6B7C /* SympathyTestView.swift */,
+			);
+			path = SympathyTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 				FBDDEFB42B11C6D500CB6B7C /* DittoCommunityApp.swift in Sources */,
 				FBDDEFD72B11DA9D00CB6B7C /* Profile.swift in Sources */,
 				FBDDEFD02B11D2E500CB6B7C /* Color+DesignSystem.swift in Sources */,
+				FBDDEFDC2B11DC8E00CB6B7C /* SympathyTestView.swift in Sources */,
 				FBDDEFD92B11DAA100CB6B7C /* Feed.swift in Sources */,
 				FBDDEFCD2B11CCB700CB6B7C /* MainTabView.swift in Sources */,
 				FBDDEFD22B11D2F100CB6B7C /* Font+DesignSystem.swift in Sources */,

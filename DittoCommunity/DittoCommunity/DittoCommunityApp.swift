@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct DittoCommunityApp: App {
+    
+    @AppStorage("hasLogin") var hasLogin = false
+
+    
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            if hasLogin {
+                MainTabView()
+            } else {
+                
+            }
         }
     }
 }
