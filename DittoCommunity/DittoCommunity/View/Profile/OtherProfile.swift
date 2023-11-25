@@ -39,15 +39,15 @@ struct OtherProfile: View {
                     
                     HStack{
                         
-                        //                Image("프로필")
-                        //                    .resizable()
-                        //                    .scaledToFit()
-                        //                    .frame(width: 60, height: 60)
-                        //                    .clipShape(Circle())
-                        
-                        Circle()
-                            .foregroundColor(.black)
+                        Image("profile")
+                            .resizable()
+                            .scaledToFit()
                             .frame(width: 60, height: 60)
+                            .clipShape(Circle())
+                        
+//                        Circle()
+//                            .foregroundColor(.black)
+//                            .frame(width: 60, height: 60)
                         
                         
                         VStack(alignment: .leading) {
@@ -57,7 +57,7 @@ struct OtherProfile: View {
                             .padding(.bottom, 1)
                             
                             HStack {
-                                Text("공감지수")
+                                Text("디토지수")
                                     .font(.b2)
                                 
                                 Text(String(Int(sympathyValue)) + "%")
@@ -71,7 +71,7 @@ struct OtherProfile: View {
                         NavigationLink(destination: {
                             EmptyView()
                         }, label: {
-                            Text("공감 보내기")
+                            Text("디토 보내기")
                                 .font(.h4)
                                 .foregroundColor(.white)
                                 .padding()

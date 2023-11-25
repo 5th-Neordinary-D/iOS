@@ -41,15 +41,15 @@ struct MyPageView: View {
                     
                     HStack{
                         
-                        //                Image("프로필")
-                        //                    .resizable()
-                        //                    .scaledToFit()
-                        //                    .frame(width: 60, height: 60)
-                        //                    .clipShape(Circle())
+                                        Image("profile")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 60, height: 60)
+                                            .clipShape(Circle())
                         
-                        Circle()
-                            .foregroundColor(.black)
-                            .frame(width: 60, height: 60)
+//                        Circle()
+//                            .foregroundColor(.black)
+//                            .frame(width: 60, height: 60)
                         
                         
                         Text("송월")
@@ -76,7 +76,7 @@ struct MyPageView: View {
                     
                     
                     HStack {
-                        Text("공감 지수")
+                        Text("디토 지수")
                         
                         Text(String(Int(sympathyValue)) + "%")
                             .foregroundColor(.primary02)
@@ -166,7 +166,7 @@ struct MyPageCustomTopTabBar: View {
                 
                 
                 VStack{
-                    Text("공감한 글")
+                    Text("디토한 글")
                         .font(tabIndex == 2 ? .h3 : .b1)
                         .foregroundColor(tabIndex == 2 ? .black : .gray05)
                         .onTapGesture {
@@ -181,6 +181,8 @@ struct MyPageCustomTopTabBar: View {
 }
 
 struct MyPageListCell: View {
+    
+    @State var isSelected = false
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -202,7 +204,8 @@ struct MyPageListCell: View {
                 
                 Spacer()
                 
-                Image("Heart.fill")
+
+                Image(isSelected == false ? "thumbs up" : "thumbs up.fill")
                     .frame(width: 20, height: 20)
                     .padding(.trailing, 4)
                 
