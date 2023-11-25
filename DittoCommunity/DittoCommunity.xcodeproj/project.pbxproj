@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		FBDDEFB42B11C6D500CB6B7C /* DittoCommunityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */; };
-		FBDDEFB62B11C6D500CB6B7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFB52B11C6D500CB6B7C /* ContentView.swift */; };
 		FBDDEFB82B11C6D600CB6B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */; };
 		FBDDEFBB2B11C6D600CB6B7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDDEFBA2B11C6D600CB6B7C /* Preview Assets.xcassets */; };
 		FBDDEFC32B11C75400CB6B7C /* MightyCombine in Frameworks */ = {isa = PBXBuildFile; productRef = FBDDEFC22B11C75400CB6B7C /* MightyCombine */; };
 		FBDDEFC52B11C75400CB6B7C /* MightySwift in Frameworks */ = {isa = PBXBuildFile; productRef = FBDDEFC42B11C75400CB6B7C /* MightySwift */; };
+		FBDDEFCD2B11CCB700CB6B7C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFCC2B11CCB700CB6B7C /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FBDDEFB02B11C6D500CB6B7C /* DittoCommunity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DittoCommunity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoCommunityApp.swift; sourceTree = "<group>"; };
-		FBDDEFB52B11C6D500CB6B7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBDDEFBA2B11C6D600CB6B7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBDDEFCC2B11CCB700CB6B7C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */,
-				FBDDEFB52B11C6D500CB6B7C /* ContentView.swift */,
+				FBDDEFC62B11CC8700CB6B7C /* View */,
 				FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */,
 				FBDDEFB92B11C6D600CB6B7C /* Preview Content */,
 			);
@@ -69,6 +69,38 @@
 				FBDDEFBA2B11C6D600CB6B7C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBDDEFC62B11CC8700CB6B7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFC92B11CC9B00CB6B7C /* Profile */,
+				FBDDEFC82B11CC9600CB6B7C /* Feed */,
+				FBDDEFC72B11CC9000CB6B7C /* MainTab */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FBDDEFC72B11CC9000CB6B7C /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFCC2B11CCB700CB6B7C /* MainTabView.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		FBDDEFC82B11CC9600CB6B7C /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		FBDDEFC92B11CC9B00CB6B7C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +180,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBDDEFB62B11C6D500CB6B7C /* ContentView.swift in Sources */,
 				FBDDEFB42B11C6D500CB6B7C /* DittoCommunityApp.swift in Sources */,
+				FBDDEFCD2B11CCB700CB6B7C /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
