@@ -76,7 +76,6 @@ struct LoginView: View {
 //    LoginView()
 //}
 
-
 enum LoginMethod: CaseIterable {
     
     case kakao, naver, google

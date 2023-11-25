@@ -41,6 +41,6 @@ struct TestFinishView: View {
     }
 }
 
-//#Preview {
-//    TestFinishView()
-//}
+#Preview {
+    TestFinishView()
+}
