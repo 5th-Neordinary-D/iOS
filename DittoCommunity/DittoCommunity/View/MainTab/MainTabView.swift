@@ -31,28 +31,25 @@ struct MainTabView: View {
     }
     
     @ViewBuilder var bottomTabBar: some View {
-        HStack {
+        LazyVGrid(columns: Array(repeating: .init(), count: 3), content: {
             Label(
                 title: { Text("Feed") },
                 icon: { Image(systemName: "list.bullet") }
             ).onTapGesture {
                 self.tabTag = 1
             }
-            Spacer()
             Image(systemName: "plus.circle")
                 .onTapGesture {
                     showFeedPostView = true
                 }
-            Spacer()
             Label(
                 title: { Text("Profile") },
                 icon: { Image(systemName: "person") }
             ).onTapGesture {
                 self.tabTag = 2
             }
-        }
+        })
         .padding(.bottom, 50)
-        .padding(.horizontal, 50)
         .padding(.top, 20)
         .background(Color.gray.opacity(0.1))
     }
