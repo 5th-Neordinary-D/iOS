@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct CustomAlertView: View {
-//    let isLeftBtn: Bool
-//    let isRightBtn: Bool
-    
+
     let alertTitle: String
     let alertSubTitle: String
     
@@ -20,10 +18,7 @@ struct CustomAlertView: View {
     let leftBtnAction: () -> Void
     let rightBtnAction: () -> Void
     
-    
     init(
-//        isLeftBtn: Bool = false,
-//        isRightBtn: Bool = false,
         alertTitle: String = "작성 중인 글은 저장되지 않습니다.",
         alertSubTitle: String = "작성을 그만두시겠어요?",
         leftBtnTitle: String = "이어서 쓰기",
@@ -31,8 +26,6 @@ struct CustomAlertView: View {
         leftBtnAction: @escaping () -> Void = {},
         rightBtnAction: @escaping () -> Void = {}
     ) {
-//        self.isLeftBtn = isLeftBtn
-//        self.isRightBtn = isRightBtn
         self.alertTitle = alertTitle
         self.alertSubTitle = alertSubTitle
         self.leftBtnTitle = leftBtnTitle
@@ -44,57 +37,58 @@ struct CustomAlertView: View {
     var body: some View {
         ZStack {
             Color.black.opacity(0.5).ignoresSafeArea(.all)
-            
-            RoundedRectangle(cornerRadius: 16)
-                .overlay {
-                    VStack(spacing: 0) {
-                        Spacer()
-                        Text(alertTitle)
-                            .foregroundColor(.black)
-                        Text(alertSubTitle)
-                            .foregroundColor(.gray05)
-                        Spacer()
-                        Rectangle()
-                            .frame(height: 1)
-                            .foregroundColor(.gray03)
-
-                        HStack(spacing: 0) {
-                            Button(
-                                action: {
-                                    
-                                },
-                                label: {
-                                    Text(leftBtnTitle)
-                                        .foregroundColor(.gray05)
-                                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                }
-                            )
-                            
-                            Rectangle()
-                                .frame(width: 1, height: 56)
-                                .foregroundColor(.gray03)
-                            
-                            Button(
-                                action: {
-                                    
-                                },
-                                label: {
-                                    Text(rightBtnTitle)
-                                        .foregroundColor(.black)
-                                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                        
-                                }
-                            )
-                        }
-                        .frame(height: 56)
-                        
-                    }
-                    
-                }
-                .frame(width: 294, height: 168)
-                .foregroundColor(.white)
-            
+            content
         }
+    }
+    
+    @ViewBuilder var content: some View {
+        VStack(spacing: 4) {
+            Spacer()
+            Text(alertTitle)
+                .font(.t1)
+                .foregroundColor(.gray07)
+            Text(alertSubTitle)
+                .font(.b2)
+                .foregroundColor(.gray05)
+                .multilineTextAlignment(.center)
+            Spacer()
+            HStack {
+                Button(
+                    action: {
+                        leftBtnAction()
+                    },
+                    label: {
+                        Text(leftBtnTitle)
+                            .foregroundColor(.gray05)
+                            .font(.b2)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    }
+                )
+                
+                Rectangle()
+                    .frame(width: 1)
+                    .foregroundColor(.gray03)
+                
+                Button(
+                    action: {
+                        rightBtnAction()
+                    },
+                    label: {
+                        Text(rightBtnTitle)
+                            .foregroundColor(.gray07)
+                            .font(.b2)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    }
+                )
+            }
+            .frame(height: 56)
+            .overlay(alignment: .top) {
+                Color.gray03.frame(height: 1)
+            }
+        }
+        .frame(width: 294, height: 172)
+        .background(Color.white)
+        .cornerRadius(16)
     }
 }
 

@@ -19,5 +19,5 @@ public extension Color {
 	static let gray06 = Color("444444")
 	static let gray07 = Color("222222")
     
-    static let primary02 = Color("FF922D")
+    static let primary02 = Color("FF6C2D")
 }

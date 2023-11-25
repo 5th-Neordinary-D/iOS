@@ -35,8 +35,7 @@ struct MyPageView: View {
                         Image("placeholder")
                             .resizable()
                             .frame(width: 60, height: 60)
-                        
-                        
+
                         Text("송월")
                             .font(.h2)
                             .foregroundColor(.black)
@@ -49,7 +48,9 @@ struct MyPageView: View {
                             Text("프로필 변경")
                                 .font(.b2)
                                 .foregroundColor(.black)
-                                .padding()
+                                .frame(height: 22)
+                                .padding(.horizontal, 14)
+                                .padding(.vertical, 8)
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 4)
                                         .stroke(lineWidth: 1)
@@ -70,21 +71,7 @@ struct MyPageView: View {
                     }
                     .font(.h4)
                     .padding(.bottom, 16)
-                    
 
-//                    ZStack{
-//
-//                        RoundedRectangle(cornerRadius: 10)
-//                            .frame(height: 10)
-//                            .foregroundColor(.gray02)
-//
-//
-//                        RoundedRectangle(cornerRadius: 10)
-//                            .frame(height: 10)
-//                            .foregroundColor(.orange)
-//                    }
-//                    .padding(.bottom, 36)
-                    
                     GeometryReader { geo in
                         
                         RoundedRectangle(cornerRadius: 10)
@@ -92,12 +79,12 @@ struct MyPageView: View {
                             .foregroundColor(.gray02)
                         
                         
-
-                            RoundedRectangle(cornerRadius: 10)
-                                .frame(width: geo.size.width * CGFloat((sympathyValue / 100)),height: 10)
+                        
+                        RoundedRectangle(cornerRadius: 10)
+                            .frame(width: geo.size.width * CGFloat((sympathyValue / 100)),height: 10)
                             .foregroundColor(.primary02)
-                            
-                            Image("Union")
+                        
+                        Image("Union")
                             .padding(.top)
                             .position(x: geo.size.width * CGFloat((sympathyValue / 100)))
                     }

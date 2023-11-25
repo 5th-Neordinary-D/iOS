@@ -24,6 +24,10 @@ struct DittoCommunityApp: App {
                     }
             } else if appState.hasLogin {
                 MainTabView()
+                    .environmentObject(appState)
+            } else if appState.didTest {
+                TestFinishView()
+                    .environmentObject(appState)
             } else {
                 LoginView()
                     .environmentObject(appState)
@@ -35,4 +39,5 @@ struct DittoCommunityApp: App {
 class AppState: ObservableObject {
     
     @AppStorage("hasLogin") var hasLogin = false
+    @AppStorage("didTest") var didTest = false
 }

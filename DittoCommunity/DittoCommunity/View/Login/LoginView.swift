@@ -9,25 +9,19 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @StateObject var viewModel = LoginViewModel()
-    
     var body: some View {
-        if viewModel.hasDoneTest {
-            TestFinishView()
-        } else {
-            NavigationView {
-                VStack {
-                    Image("login")
-                        .padding(.top, 98)
-                        .padding(.bottom, 32)
-                    loginButtonList
-                        .padding(.bottom, 16)
-                    bottomButton
-                }
-                .padding(.bottom, 101)
-                .edgesIgnoringSafeArea(.bottom)
-                .padding(.horizontal, 20)
+        NavigationView {
+            VStack {
+                Image("login")
+                    .padding(.top, 98)
+                    .padding(.bottom, 32)
+                loginButtonList
+                    .padding(.bottom, 16)
+                bottomButton
             }
+            .padding(.bottom, 101)
+            .edgesIgnoringSafeArea(.bottom)
+            .padding(.horizontal, 20)
         }
     }
     
@@ -36,7 +30,6 @@ struct LoginView: View {
             ForEach(LoginMethod.allCases, id: \.self) { method in
                 NavigationLink {
                     SympathyTestView(pageIndex: 0)
-                        .environmentObject(viewModel)
                 } label: {
                     loginButtonCell(method)
                 }

@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
-        
+    
+    @EnvironmentObject var appState: AppState
     @EnvironmentObject var mainTabVM: MainTabViewModel
     @StateObject var viewModel = HomeViewModel()
     
@@ -44,6 +45,7 @@ struct HomeView: View {
         .font(.h1)
         .foregroundColor(.gray07)
         .opacity(viewModel.opacity)
+        .lineSpacing(6)
         .padding(.horizontal, 20)
         .padding(.vertical, 16)
     }
@@ -54,7 +56,6 @@ struct HomeView: View {
                 dropBox
                     .padding(.leading, 20)
                 ForEach(FeedCategory.allCases, id: \.self) { category in
-                    
                     let isLastCell = category == .family
                     categoryCell(category)
                         .padding(.trailing, isLastCell ? 12 : 0)
@@ -172,6 +173,20 @@ struct HomeView: View {
                         .padding(.horizontal, 20)
                         .environmentObject(viewModel)
                         .onTapGesture {
+//                            guard appState.didTest else {
+//                                mainTabVM.alert(.init(
+//                                    title: "디토 테스트 결과가 없어요",
+//                                    message: "디토 테스트 후에 글을 작성할 수가 있어요!",
+//                                    primaryButton: "구경만 할래요",
+//                                    primaryAction: { mainTabVM.resetAlert() },
+//                                    secondaryButton: "테스트 할래요",
+//                                    secondaryAction: { 
+//                                        mainTabVM.resetAlert()
+//                                        mainTabVM.navigate(to: .test)
+//                                    })
+//                                )
+//                                return
+//                            }
                             mainTabVM.navigate(to: .feedDetail(feed.feedId))
                         }
                 }

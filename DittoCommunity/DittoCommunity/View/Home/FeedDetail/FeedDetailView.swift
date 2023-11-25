@@ -13,6 +13,8 @@ struct FeedDetailView: View {
     @StateObject var viewModel = FeedDetailViewModel()
     
     let id: Int
+    
+    @State var scrollToBottom = false
 
     var longPress: some Gesture {
         LongPressGesture(minimumDuration: 0.5)
@@ -22,16 +24,22 @@ struct FeedDetailView: View {
     var body: some View {
         VStack(spacing: 0) {
             topBar
-            ScrollView {
-                LazyVStack(content: {
-                    contentView
-                    Color.gray01.frame(height: 8)
-                    commentsView
-                    Spacer()
+            ScrollViewReader(content: { proxy in
+                ScrollView {
+                    LazyVStack(content: {
+                        contentView
+                        Color.gray01.frame(height: 8)
+                        commentsView
+                        Spacer()
+                            .id(1000)
+                    })
+                }
+                .onChange(of: scrollToBottom, perform: { newValue in
+                    proxy.scrollTo(1000)
                 })
-            }
-            .redacted(viewModel.feed == nil)
-            commentInput
+                .redacted(viewModel.feed == nil)
+                commentInput
+            })
         }
     }
     
@@ -56,6 +64,7 @@ struct FeedDetailView: View {
                 .font(.b1)
                 .foregroundColor(Color.gray06)
                 .padding(.bottom, 16)
+                .lineSpacing(6)
             sympathyContainer
                 .padding(.bottom, 25)
         }
@@ -99,28 +108,28 @@ struct FeedDetailView: View {
                     .font(.b2)
                     .foregroundColor(.gray05)
             } else {
-                if viewModel.feed?.sympathy1 != nil {
-                    Circle()
+                if viewModel.feed?.sympathy1 != 0 {
+                    LottieView(data: loadAnimationData(named: "emotion1")!)
                         .frame(width: 20, height: 20)
-                        .foregroundColor(Color.gray03)
+                        .clipShape(Circle())
                         .padding(.trailing, 4)
                 }
-                if viewModel.feed?.sympathy2 != nil {
-                    Circle()
+                if viewModel.feed?.sympathy2 != 0 {
+                    LottieView(data: loadAnimationData(named: "emotion2")!)
                         .frame(width: 20, height: 20)
-                        .foregroundColor(Color.gray03)
+                        .clipShape(Circle())
                         .padding(.trailing, 4)
                 }
-                if viewModel.feed?.sympathy3 != nil {
-                    Circle()
+                if viewModel.feed?.sympathy3 != 0 {
+                    LottieView(data: loadAnimationData(named: "emotion3")!)
                         .frame(width: 20, height: 20)
-                        .foregroundColor(Color.gray03)
+                        .clipShape(Circle())
                         .padding(.trailing, 4)
                 }
-                if viewModel.feed?.sympathy4 != nil {
-                    Circle()
+                if viewModel.feed?.sympathy4 != 0 {
+                    Image("emotion4")
+                        .resizable()
                         .frame(width: 20, height: 20)
-                        .foregroundColor(Color.gray03)
                         .padding(.trailing, 4)
                 }
                 Text(String(viewModel.feed?.sympathyCount ?? 0))
@@ -146,17 +155,25 @@ struct FeedDetailView: View {
     
     @ViewBuilder var lottieContainer: some View {
         HStack(spacing: 12) {
-            Circle()
-                .frame(width: 44, height: 44)
-                .foregroundColor(.gray03)
-                .onTapGesture {
-                    viewModel.showLottieContainer = false
-                }
+            if let data = loadAnimationData(named: "emotion1") {
+                LottieView(data: data)
+                    .frame(width: 44, height: 44)
+                    .clipShape(Circle())
+                    .onTapGesture {
+                        viewModel.feed?.sympathy1 += viewModel.feed?.isLiked ?? false ? -1 : 1
+                        viewModel.feed?.sympathyCount += viewModel.feed?.isLiked ?? false ? -1 : 1
+                        viewModel.feed?.isLiked.toggle()
+                        viewModel.showLottieContainer = false
+                    }
+            }
             if let data = loadAnimationData(named: "emotion2") {
                 LottieView(data: data)
                     .frame(width: 44, height: 44)
                     .clipShape(Circle())
                     .onTapGesture {
+                        viewModel.feed?.sympathy2 += viewModel.feed?.isLiked ?? false ? -1 : 1
+                        viewModel.feed?.sympathyCount += viewModel.feed?.isLiked ?? false ? -1 : 1
+                        viewModel.feed?.isLiked.toggle()
                         viewModel.showLottieContainer = false
                     }
             }
@@ -165,13 +182,19 @@ struct FeedDetailView: View {
                     .frame(width: 44, height: 44)
                     .clipShape(Circle())
                     .onTapGesture {
+                        viewModel.feed?.sympathy3 += viewModel.feed?.isLiked ?? false ? -1 : 1
+                        viewModel.feed?.sympathyCount += viewModel.feed?.isLiked ?? false ? -1 : 1
+                        viewModel.feed?.isLiked.toggle()
                         viewModel.showLottieContainer = false
                     }
             }
-            Circle()
+            Image("emotion4")
+                .resizable()
                 .frame(width: 44, height: 44)
-                .foregroundColor(.gray03)
                 .onTapGesture {
+                    viewModel.feed?.sympathy4 += viewModel.feed?.isLiked ?? false ? -1 : 1
+                    viewModel.feed?.sympathyCount += viewModel.feed?.isLiked ?? false ? -1 : 1
+                    viewModel.feed?.isLiked.toggle()
                     viewModel.showLottieContainer = false
                 }
         }
@@ -230,18 +253,29 @@ struct FeedDetailView: View {
             TextField(
                 "따뜻한 공감을 남겨주세요",
                 text: $viewModel.commentText,
-                onCommit: { viewModel.didTapSubmit() }
+                onCommit: {
+                    withAnimation {
+                        viewModel.didTapSubmit()
+                        scrollToBottom.toggle()
+                    }
+                }
             )
             .padding(.horizontal, 24)
             .padding(.vertical, 12)
             .padding(.trailing, 34)
             .overlay(alignment: .trailing, content: {
                 Button(action: {
-                    viewModel.didTapSubmit()
+                    withAnimation {
+                        viewModel.didTapSubmit()
+                        scrollToBottom.toggle()
+                    }
                 }, label: {
                     Text("등록")
+                        .foregroundColor(
+                            viewModel.commentText.isEmpty ?
+                            .gray04 : .primary02
+                        )
                         .font(.b1)
-                        .foregroundColor(.gray04)
                         .padding(.trailing, 24)
                 })
             })

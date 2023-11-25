@@ -34,12 +34,12 @@ struct FeedCellView: View {
         Text(viewModel.feeds[index].content)
             .font(.b2)
             .foregroundColor(Color.gray05)
+            .lineSpacing(4)
     }
     
     @ViewBuilder var bottom: some View {
         HStack(spacing: 4) {
             Text(viewModel.feeds[index].category)
-            
             Spacer()
             viewModel.feeds[index].isLikeChecked ?
                 Icon.heartFill.image :

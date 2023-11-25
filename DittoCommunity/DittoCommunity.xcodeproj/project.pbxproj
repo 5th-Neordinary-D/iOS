@@ -21,6 +21,8 @@
 		FB7332532B126BF3007562A7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = FB7332522B126BF3007562A7 /* Lottie */; };
 		FB7332572B126CE9007562A7 /* emotion2.json in Resources */ = {isa = PBXBuildFile; fileRef = FB7332552B126CE9007562A7 /* emotion2.json */; };
 		FB7332582B126CE9007562A7 /* emotion3.json in Resources */ = {isa = PBXBuildFile; fileRef = FB7332562B126CE9007562A7 /* emotion3.json */; };
+		FB73325A2B1286C0007562A7 /* SympathyTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7332592B1286C0007562A7 /* SympathyTestViewModel.swift */; };
+		FB73325C2B128CE6007562A7 /* emotion1.json in Resources */ = {isa = PBXBuildFile; fileRef = FB73325B2B128CE6007562A7 /* emotion1.json */; };
 		FBB1DA0A2B125CD800E8C57A /* View+Redacted.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1DA092B125CD800E8C57A /* View+Redacted.swift */; };
 		FBB1DA0D2B12607E00E8C57A /* FeedDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1DA0C2B12607E00E8C57A /* FeedDetailViewModel.swift */; };
 		FBDDEFB42B11C6D500CB6B7C /* DittoCommunityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */; };
@@ -67,6 +69,8 @@
 		FB7332502B126BC3007562A7 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		FB7332552B126CE9007562A7 /* emotion2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emotion2.json; sourceTree = "<group>"; };
 		FB7332562B126CE9007562A7 /* emotion3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emotion3.json; sourceTree = "<group>"; };
+		FB7332592B1286C0007562A7 /* SympathyTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SympathyTestViewModel.swift; sourceTree = "<group>"; };
+		FB73325B2B128CE6007562A7 /* emotion1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emotion1.json; sourceTree = "<group>"; };
 		FBB1DA092B125CD800E8C57A /* View+Redacted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Redacted.swift"; sourceTree = "<group>"; };
 		FBB1DA0C2B12607E00E8C57A /* FeedDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewModel.swift; sourceTree = "<group>"; };
 		FBDDEFB02B11C6D500CB6B7C /* DittoCommunity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DittoCommunity.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +140,7 @@
 		FB7332542B126CDB007562A7 /* Lotties */ = {
 			isa = PBXGroup;
 			children = (
+				FB73325B2B128CE6007562A7 /* emotion1.json */,
 				FB7332552B126CE9007562A7 /* emotion2.json */,
 				FB7332562B126CE9007562A7 /* emotion3.json */,
 			);
@@ -261,6 +266,7 @@
 				FBDDEFE22B11E60D00CB6B7C /* LoginView.swift */,
 				FBDDEFDD2B11DE5800CB6B7C /* LoginViewModel.swift */,
 				FBDDEFDB2B11DC8E00CB6B7C /* SympathyTestView.swift */,
+				FB7332592B1286C0007562A7 /* SympathyTestViewModel.swift */,
 				FBDDEFEA2B12113600CB6B7C /* TestFinishView.swift */,
 			);
 			path = Login;
@@ -390,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB7332572B126CE9007562A7 /* emotion2.json in Resources */,
+				FB73325C2B128CE6007562A7 /* emotion1.json in Resources */,
 				FBDDEFBB2B11C6D600CB6B7C /* Preview Assets.xcassets in Resources */,
 				3B3F228D2B11D7DC00351261 /* Pretendard-Bold.otf in Resources */,
 				3B3F22912B11D80600351261 /* Pretendard-Regular.otf in Resources */,
@@ -409,6 +416,7 @@
 				FBDDEFF32B122D2C00CB6B7C /* FeedCellView.swift in Sources */,
 				FB7332512B126BC3007562A7 /* LottieView.swift in Sources */,
 				FBDDF0022B12349B00CB6B7C /* UIApplication+.swift in Sources */,
+				FB73325A2B1286C0007562A7 /* SympathyTestViewModel.swift in Sources */,
 				FBDDF00C2B124A4200CB6B7C /* DetailFeed.swift in Sources */,
 				3BF500442B1223E90061DABF /* OtherProfile.swift in Sources */,
 				6C3EB0482B120483002D29C6 /* ActionSheetView.swift in Sources */,

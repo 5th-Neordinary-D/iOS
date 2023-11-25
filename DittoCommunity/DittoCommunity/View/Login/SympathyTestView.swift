@@ -10,11 +10,15 @@ import SwiftUI
 struct SympathyTestView: View {
     
     @Environment(\.dismiss) private var dismiss
-    @EnvironmentObject var viewModel: LoginViewModel
     @EnvironmentObject var appState: AppState
+    @StateObject var viewModel = SympathyTestViewModel()
     
     @State var navigateToNext = false
     let pageIndex: Int
+    
+    init(pageIndex: Int) {
+        self.pageIndex = pageIndex
+    }
     
     var body: some View {
         VStack(spacing: 0) {
@@ -24,6 +28,7 @@ struct SympathyTestView: View {
             // Indicator
             VStack(spacing: 0) {
                 title
+                    .lineSpacing(4)
                     .padding(.bottom, 44)
                 Image("test" + String(pageIndex + 1))
                     .resizable()
@@ -40,30 +45,14 @@ struct SympathyTestView: View {
     
     @ViewBuilder var topBar: some View {
         VStack(spacing: 0) {
-//            HStack {
-//                Icon.chevronLeft.image.onTapGesture { dismiss() }
-//                Spacer()
-//                Text("건너뛰기")
-//                    .font(.b2)
-//                    .foregroundColor(.gray05)
-//                    .onTapGesture {
-//                        // TODO: - 네트워크 통신으로 로그인하기
-//                        appState.hasLogin = true
-//                    }
-//            }
             CustomNavigationBar(
                 isDisplayLeadingBtn: true,
                 isDisplayTrailingBtn: true,
                 leadingItems: [(.chevronLeft, { dismiss() })],
                 trailingItems: [(.skip, {
-                    // TODO: - 네트워크 통신으로 로그인하기
                     appState.hasLogin = true
-                    
                 })]
             )
-//            .padding(.trailing, 10)
-//            .frame(height: 44)
-//            .padding(.horizontal, 20)
             pageIndicator
         }
     }
@@ -136,7 +125,6 @@ struct SympathyTestView: View {
         
         NavigationLink(isActive: $navigateToNext) {
             SympathyTestView(pageIndex: pageIndex + 1)
-                .environmentObject(viewModel)
         } label: {
             EmptyView()
         }
@@ -146,7 +134,7 @@ struct SympathyTestView: View {
                 navigateToNext = true
             } else if pageIndex == 3, hasSelected {
                 withAnimation {
-                    viewModel.hasDoneTest = true
+                    appState.didTest = true
                 }
             }
         }, label: {

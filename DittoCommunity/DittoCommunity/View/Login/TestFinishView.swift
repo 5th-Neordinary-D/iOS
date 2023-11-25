@@ -12,15 +12,16 @@ struct TestFinishView: View {
     @EnvironmentObject var appState: AppState
     
     var body: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: 12) {
             Spacer()
             Image("finish")
-                .padding(.bottom, 27)
+                .padding(.bottom, 23)
             Text("진스님의 디토지수는 100% 입니다.")
                 .font(.h2)
                 .foregroundColor(.gray07)
             Text("당신은 이미 공감왕! 디토에서 당신의 공감을\n기다리는 사람들에게 감동을 전하세요.")
                 .multilineTextAlignment(.center)
+                .lineSpacing(4)
                 .font(.b2)
                 .foregroundColor(.gray05)
             Spacer()
@@ -31,8 +32,8 @@ struct TestFinishView: View {
     
     @ViewBuilder var bottomButton: some View {
         Button(action: {
-            // TODO: - 네트워크로 로그인 하기
             appState.hasLogin = true
+            appState.didTest = true
         }, label: {
             Text("공감하러 가기")
                 .font(.t1)

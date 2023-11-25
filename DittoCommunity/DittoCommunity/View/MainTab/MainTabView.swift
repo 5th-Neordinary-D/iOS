@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainTabView: View {
     
+    @EnvironmentObject var appState: AppState
     @StateObject var viewModel = MainTabViewModel()
     
     init() {
@@ -33,6 +34,21 @@ struct MainTabView: View {
             .sheet(isPresented: $viewModel.showFeedPostView, content: {
                 Text("Feed Post")
             })
+        }
+        .overlay {
+            if viewModel.showAlert,
+               let alert = viewModel.alert {
+                CustomAlertView(
+                    alertTitle: alert.title,
+                    alertSubTitle: alert.message,
+                    leftBtnTitle: alert.primaryButton,
+                    rightBtnTitle: alert.secondaryButton, 
+                    leftBtnAction: { alert.primaryAction() },
+                    rightBtnAction: { alert.secondaryAction() }
+                )
+            } else {
+                EmptyView()
+            }
         }
     }
     

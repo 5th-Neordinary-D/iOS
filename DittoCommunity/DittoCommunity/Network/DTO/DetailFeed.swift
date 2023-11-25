@@ -45,9 +45,9 @@ extension DetailFeed {
     static var mock: Self {
         .init(
             id: 1,
-            category: "인간관계",
-            title: "블라블라 고민이 있습니다.",
-            content: "덕분에 힘이 납니다! 오늘 처음 가입했는데 많은 분들이 계신 걸 보니 든든해요.덕분에 힘이 납니다! 오늘 처음 가입했는데 많은 분들이 계신 걸 보니 든든해요.덕분에 힘이 납니다! 오늘 처음 가입했는데 많은 분들이 계신 걸 보니 든든해요.덕분에 힘이 납니다! 오늘 처음 가입했는데 많은 분들이 계신 걸 보니 든든해요.덕분에 힘이 납니다!",
+            category: "회사 ",
+            title: "직장에서 이런 일이 있었네요. ",
+            content: "제가 작성한 기획서를 매번 부족하다는 이유로 까고,,, 직장 상사의 감정 쓰레기통이 된 거 같아요.. ㅠ",
             sympathy1: 0,
             sympathy2: 0,
             sympathy3: 0,
@@ -64,7 +64,7 @@ extension DetailFeed {
             comments: [
                 .init(
                     commentId: 0,
-                    content: "공감해요 어쩌구저쩌구",
+                    content: "아이고ㅠㅠ 저도 그런 적 있어서 뭔지 알아요..Ditto...",
                     fCount: 0,
                     tCount: 0,
                     author: .init(id: 0, username: "박이든", heartLevel: "78%"),
