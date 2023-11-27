@@ -9,9 +9,22 @@ import SwiftUI
 
 @main
 struct DittoCommunityApp: App {
+    
+    @StateObject var appState = AppState()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if appState.hasLogin {
+                MainTabView()
+            } else {
+                LoginView()
+                    .environmentObject(appState)
+            }
         }
     }
+}
+
+class AppState: ObservableObject {
+    
+    @AppStorage("hasLogin") var hasLogin = false
 }

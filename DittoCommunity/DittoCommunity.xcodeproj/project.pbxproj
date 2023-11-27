@@ -7,18 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3F228D2B11D7DC00351261 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3F228C2B11D7DC00351261 /* Pretendard-Bold.otf */; };
+		3B3F228F2B11D7FB00351261 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3F228E2B11D7FB00351261 /* Pretendard-SemiBold.otf */; };
+		3B3F22912B11D80600351261 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3F22902B11D80600351261 /* Pretendard-Regular.otf */; };
+		6C3EB03E2B11E070002D29C6 /* TestCompleteModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB03D2B11E070002D29C6 /* TestCompleteModalView.swift */; };
+		6C3EB0422B11E170002D29C6 /* CategoryModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0412B11E170002D29C6 /* CategoryModalView.swift */; };
+		6C3EB0462B11E9DD002D29C6 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0452B11E9DD002D29C6 /* CustomAlertView.swift */; };
+		6C3EB0482B120483002D29C6 /* ActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0472B120483002D29C6 /* ActionSheetView.swift */; };
+		6C3EB04E2B121CF9002D29C6 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB04D2B121CF9002D29C6 /* CustomNavigationBar.swift */; };
+		6C3EB0542B122956002D29C6 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0532B122956002D29C6 /* FeedView.swift */; };
+		6C3EB0582B122F93002D29C6 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0572B122F93002D29C6 /* FeedViewModel.swift */; };
+		6C3EB05A2B1237A2002D29C6 /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0592B1237A2002D29C6 /* CategoryType.swift */; };
+		6C3EB05D2B124606002D29C6 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 6C3EB05C2B124606002D29C6 /* WrappingHStack */; };
+		6C3EB0602B127BC2002D29C6 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 6C3EB05F2B127BC2002D29C6 /* PopupView */; };
+		6C3EB0622B127BD9002D29C6 /* CategoryModalView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3EB0612B127BD9002D29C6 /* CategoryModalView2.swift */; };
 		FBDDEFB42B11C6D500CB6B7C /* DittoCommunityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */; };
-		FBDDEFB62B11C6D500CB6B7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFB52B11C6D500CB6B7C /* ContentView.swift */; };
 		FBDDEFB82B11C6D600CB6B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */; };
 		FBDDEFBB2B11C6D600CB6B7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDDEFBA2B11C6D600CB6B7C /* Preview Assets.xcassets */; };
+		FBDDEFC32B11C75400CB6B7C /* MightyCombine in Frameworks */ = {isa = PBXBuildFile; productRef = FBDDEFC22B11C75400CB6B7C /* MightyCombine */; };
+		FBDDEFC52B11C75400CB6B7C /* MightySwift in Frameworks */ = {isa = PBXBuildFile; productRef = FBDDEFC42B11C75400CB6B7C /* MightySwift */; };
+		FBDDEFCD2B11CCB700CB6B7C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFCC2B11CCB700CB6B7C /* MainTabView.swift */; };
+		FBDDEFD02B11D2E500CB6B7C /* Color+DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFCF2B11D2E500CB6B7C /* Color+DesignSystem.swift */; };
+		FBDDEFD22B11D2F100CB6B7C /* Font+DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFD12B11D2F100CB6B7C /* Font+DesignSystem.swift */; };
+		FBDDEFD72B11DA9D00CB6B7C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFD62B11DA9D00CB6B7C /* Profile.swift */; };
+		FBDDEFD92B11DAA100CB6B7C /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFD82B11DAA100CB6B7C /* Feed.swift */; };
+		FBDDEFDC2B11DC8E00CB6B7C /* SympathyTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFDB2B11DC8E00CB6B7C /* SympathyTestView.swift */; };
+		FBDDEFDE2B11DE5800CB6B7C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFDD2B11DE5800CB6B7C /* LoginViewModel.swift */; };
+		FBDDEFE02B11DF3100CB6B7C /* Image+Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFDF2B11DF3100CB6B7C /* Image+Icon.swift */; };
+		FBDDEFE32B11E60D00CB6B7C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFE22B11E60D00CB6B7C /* LoginView.swift */; };
+		FBDDEFE72B11E97F00CB6B7C /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFE62B11E97F00CB6B7C /* Color+Hex.swift */; };
+		FBDDEFE92B11EE3C00CB6B7C /* UINavigationController+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFE82B11EE3C00CB6B7C /* UINavigationController+UIGestureRecognizerDelegate.swift */; };
+		FBDDEFEB2B12113600CB6B7C /* TestFinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFEA2B12113600CB6B7C /* TestFinishView.swift */; };
+		FBDDEFED2B12155500CB6B7C /* UIscreen+ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDDEFEC2B12155500CB6B7C /* UIscreen+ScreenSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B3F228C2B11D7DC00351261 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		3B3F228E2B11D7FB00351261 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		3B3F22902B11D80600351261 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		3B3F22922B11D9D300351261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6C3EB03D2B11E070002D29C6 /* TestCompleteModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCompleteModalView.swift; sourceTree = "<group>"; };
+		6C3EB0412B11E170002D29C6 /* CategoryModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModalView.swift; sourceTree = "<group>"; };
+		6C3EB0452B11E9DD002D29C6 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		6C3EB0472B120483002D29C6 /* ActionSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetView.swift; sourceTree = "<group>"; };
+		6C3EB04D2B121CF9002D29C6 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		6C3EB0532B122956002D29C6 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		6C3EB0572B122F93002D29C6 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		6C3EB0592B1237A2002D29C6 /* CategoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryType.swift; sourceTree = "<group>"; };
+		6C3EB0612B127BD9002D29C6 /* CategoryModalView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModalView2.swift; sourceTree = "<group>"; };
 		FBDDEFB02B11C6D500CB6B7C /* DittoCommunity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DittoCommunity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoCommunityApp.swift; sourceTree = "<group>"; };
-		FBDDEFB52B11C6D500CB6B7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBDDEFBA2B11C6D600CB6B7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBDDEFCC2B11CCB700CB6B7C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		FBDDEFCF2B11D2E500CB6B7C /* Color+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+DesignSystem.swift"; sourceTree = "<group>"; };
+		FBDDEFD12B11D2F100CB6B7C /* Font+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+DesignSystem.swift"; sourceTree = "<group>"; };
+		FBDDEFD62B11DA9D00CB6B7C /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		FBDDEFD82B11DAA100CB6B7C /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		FBDDEFDB2B11DC8E00CB6B7C /* SympathyTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SympathyTestView.swift; sourceTree = "<group>"; };
+		FBDDEFDD2B11DE5800CB6B7C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FBDDEFDF2B11DF3100CB6B7C /* Image+Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Icon.swift"; sourceTree = "<group>"; };
+		FBDDEFE22B11E60D00CB6B7C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FBDDEFE62B11E97F00CB6B7C /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		FBDDEFE82B11EE3C00CB6B7C /* UINavigationController+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
+		FBDDEFEA2B12113600CB6B7C /* TestFinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFinishView.swift; sourceTree = "<group>"; };
+		FBDDEFEC2B12155500CB6B7C /* UIscreen+ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIscreen+ScreenSize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +79,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C3EB0602B127BC2002D29C6 /* PopupView in Frameworks */,
+				FBDDEFC52B11C75400CB6B7C /* MightySwift in Frameworks */,
+				6C3EB05D2B124606002D29C6 /* WrappingHStack in Frameworks */,
+				FBDDEFC32B11C75400CB6B7C /* MightyCombine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B3F228B2B11D77F00351261 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3B3F228C2B11D7DC00351261 /* Pretendard-Bold.otf */,
+				3B3F228E2B11D7FB00351261 /* Pretendard-SemiBold.otf */,
+				3B3F22902B11D80600351261 /* Pretendard-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		6C3EB04B2B121CD5002D29C6 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				6C3EB04C2B121CDF002D29C6 /* NavigationBar */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		6C3EB04C2B121CDF002D29C6 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				6C3EB04D2B121CF9002D29C6 /* CustomNavigationBar.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
 		FBDDEFA72B11C6D500CB6B7C = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +134,13 @@
 		FBDDEFB22B11C6D500CB6B7C /* DittoCommunity */ = {
 			isa = PBXGroup;
 			children = (
+				6C3EB04B2B121CD5002D29C6 /* Component */,
+				3B3F22922B11D9D300351261 /* Info.plist */,
 				FBDDEFB32B11C6D500CB6B7C /* DittoCommunityApp.swift */,
-				FBDDEFB52B11C6D500CB6B7C /* ContentView.swift */,
-				FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */,
+				FBDDEFE42B11E96F00CB6B7C /* Helper */,
+				FBDDEFCE2B11D2D100CB6B7C /* DesignSystem */,
+				3B3F228B2B11D77F00351261 /* Fonts */,
+				FBDDEFC62B11CC8700CB6B7C /* View */,
 				FBDDEFB92B11C6D600CB6B7C /* Preview Content */,
 			);
 			path = DittoCommunity;
@@ -65,6 +152,97 @@
 				FBDDEFBA2B11C6D600CB6B7C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBDDEFC62B11CC8700CB6B7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFE12B11E5FE00CB6B7C /* Login */,
+				FBDDEFD32B11DA8F00CB6B7C /* CustomModal */,
+				FBDDEFC92B11CC9B00CB6B7C /* Profile */,
+				FBDDEFC82B11CC9600CB6B7C /* Feed */,
+				FBDDEFC72B11CC9000CB6B7C /* MainTab */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FBDDEFC72B11CC9000CB6B7C /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFCC2B11CCB700CB6B7C /* MainTabView.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		FBDDEFC82B11CC9600CB6B7C /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFD82B11DAA100CB6B7C /* Feed.swift */,
+				6C3EB0572B122F93002D29C6 /* FeedViewModel.swift */,
+				6C3EB0532B122956002D29C6 /* FeedView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		FBDDEFC92B11CC9B00CB6B7C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFD62B11DA9D00CB6B7C /* Profile.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FBDDEFCE2B11D2D100CB6B7C /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFB72B11C6D600CB6B7C /* Assets.xcassets */,
+				FBDDEFCF2B11D2E500CB6B7C /* Color+DesignSystem.swift */,
+				FBDDEFD12B11D2F100CB6B7C /* Font+DesignSystem.swift */,
+				FBDDEFDF2B11DF3100CB6B7C /* Image+Icon.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		FBDDEFD32B11DA8F00CB6B7C /* CustomModal */ = {
+			isa = PBXGroup;
+			children = (
+				6C3EB0472B120483002D29C6 /* ActionSheetView.swift */,
+				6C3EB03D2B11E070002D29C6 /* TestCompleteModalView.swift */,
+				6C3EB0412B11E170002D29C6 /* CategoryModalView.swift */,
+				6C3EB0612B127BD9002D29C6 /* CategoryModalView2.swift */,
+				6C3EB0452B11E9DD002D29C6 /* CustomAlertView.swift */,
+				6C3EB0592B1237A2002D29C6 /* CategoryType.swift */,
+			);
+			path = CustomModal;
+			sourceTree = "<group>";
+		};
+		FBDDEFE12B11E5FE00CB6B7C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFE22B11E60D00CB6B7C /* LoginView.swift */,
+				FBDDEFDD2B11DE5800CB6B7C /* LoginViewModel.swift */,
+				FBDDEFDB2B11DC8E00CB6B7C /* SympathyTestView.swift */,
+				FBDDEFEA2B12113600CB6B7C /* TestFinishView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FBDDEFE42B11E96F00CB6B7C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFE52B11E97800CB6B7C /* Extension */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FBDDEFE52B11E97800CB6B7C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDEFE62B11E97F00CB6B7C /* Color+Hex.swift */,
+				FBDDEFEC2B12155500CB6B7C /* UIscreen+ScreenSize.swift */,
+				FBDDEFE82B11EE3C00CB6B7C /* UINavigationController+UIGestureRecognizerDelegate.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +261,12 @@
 			dependencies = (
 			);
 			name = DittoCommunity;
+			packageProductDependencies = (
+				FBDDEFC22B11C75400CB6B7C /* MightyCombine */,
+				FBDDEFC42B11C75400CB6B7C /* MightySwift */,
+				6C3EB05C2B124606002D29C6 /* WrappingHStack */,
+				6C3EB05F2B127BC2002D29C6 /* PopupView */,
+			);
 			productName = DittoCommunity;
 			productReference = FBDDEFB02B11C6D500CB6B7C /* DittoCommunity.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +295,11 @@
 				Base,
 			);
 			mainGroup = FBDDEFA72B11C6D500CB6B7C;
+			packageReferences = (
+				FBDDEFC12B11C75400CB6B7C /* XCRemoteSwiftPackageReference "MightyCombine" */,
+				6C3EB05B2B124606002D29C6 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+				6C3EB05E2B127BC2002D29C6 /* XCRemoteSwiftPackageReference "PopupView" */,
+			);
 			productRefGroup = FBDDEFB12B11C6D500CB6B7C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +315,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBDDEFBB2B11C6D600CB6B7C /* Preview Assets.xcassets in Resources */,
+				3B3F228D2B11D7DC00351261 /* Pretendard-Bold.otf in Resources */,
+				3B3F22912B11D80600351261 /* Pretendard-Regular.otf in Resources */,
 				FBDDEFB82B11C6D600CB6B7C /* Assets.xcassets in Resources */,
+				3B3F228F2B11D7FB00351261 /* Pretendard-SemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +329,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBDDEFB62B11C6D500CB6B7C /* ContentView.swift in Sources */,
+				6C3EB0482B120483002D29C6 /* ActionSheetView.swift in Sources */,
 				FBDDEFB42B11C6D500CB6B7C /* DittoCommunityApp.swift in Sources */,
+				FBDDEFD72B11DA9D00CB6B7C /* Profile.swift in Sources */,
+				FBDDEFE02B11DF3100CB6B7C /* Image+Icon.swift in Sources */,
+				6C3EB04E2B121CF9002D29C6 /* CustomNavigationBar.swift in Sources */,
+				FBDDEFD02B11D2E500CB6B7C /* Color+DesignSystem.swift in Sources */,
+				FBDDEFED2B12155500CB6B7C /* UIscreen+ScreenSize.swift in Sources */,
+				6C3EB0542B122956002D29C6 /* FeedView.swift in Sources */,
+				6C3EB05A2B1237A2002D29C6 /* CategoryType.swift in Sources */,
+				FBDDEFDC2B11DC8E00CB6B7C /* SympathyTestView.swift in Sources */,
+				FBDDEFE72B11E97F00CB6B7C /* Color+Hex.swift in Sources */,
+				FBDDEFD92B11DAA100CB6B7C /* Feed.swift in Sources */,
+				FBDDEFCD2B11CCB700CB6B7C /* MainTabView.swift in Sources */,
+				FBDDEFE92B11EE3C00CB6B7C /* UINavigationController+UIGestureRecognizerDelegate.swift in Sources */,
+				FBDDEFD22B11D2F100CB6B7C /* Font+DesignSystem.swift in Sources */,
+				FBDDEFE32B11E60D00CB6B7C /* LoginView.swift in Sources */,
+				FBDDEFDE2B11DE5800CB6B7C /* LoginViewModel.swift in Sources */,
+				6C3EB0582B122F93002D29C6 /* FeedViewModel.swift in Sources */,
+				FBDDEFEB2B12113600CB6B7C /* TestFinishView.swift in Sources */,
+				6C3EB0622B127BD9002D29C6 /* CategoryModalView2.swift in Sources */,
+				6C3EB0422B11E170002D29C6 /* CategoryModalView.swift in Sources */,
+				6C3EB0462B11E9DD002D29C6 /* CustomAlertView.swift in Sources */,
+				FBDDEFD22B11D2F100CB6B7C /* Font+DesignSystem.swift in Sources */,
+				6C3EB03E2B11E070002D29C6 /* TestCompleteModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +489,16 @@
 				DEVELOPMENT_TEAM = 76AJ433CP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DittoCommunity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "\"\"";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +506,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kim.DittoCommunity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,11 +526,16 @@
 				DEVELOPMENT_TEAM = 76AJ433CP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DittoCommunity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "\"\"";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +543,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kim.DittoCommunity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -344,6 +574,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6C3EB05B2B124606002D29C6 /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/WrappingHStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		6C3EB05E2B127BC2002D29C6 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		FBDDEFC12B11C75400CB6B7C /* XCRemoteSwiftPackageReference "MightyCombine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MightyCombine/MightyCombine.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6C3EB05C2B124606002D29C6 /* WrappingHStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C3EB05B2B124606002D29C6 /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			productName = WrappingHStack;
+		};
+		6C3EB05F2B127BC2002D29C6 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C3EB05E2B127BC2002D29C6 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+		FBDDEFC22B11C75400CB6B7C /* MightyCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBDDEFC12B11C75400CB6B7C /* XCRemoteSwiftPackageReference "MightyCombine" */;
+			productName = MightyCombine;
+		};
+		FBDDEFC42B11C75400CB6B7C /* MightySwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBDDEFC12B11C75400CB6B7C /* XCRemoteSwiftPackageReference "MightyCombine" */;
+			productName = MightySwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FBDDEFA82B11C6D500CB6B7C /* Project object */;
 }
